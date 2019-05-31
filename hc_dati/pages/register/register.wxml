@@ -1,0 +1,8 @@
+<view class="container" hidden="{{stake==1?true:false}}">
+    <image class="bgv" src="{{denglu_bgk}}"></image>
+    <image class="logopic" mode="widthFix" src="{{appname.loginimg}}"></image>
+    <button bindgetuserinfo="getUserInfo" class="register" lang="zh_CN" openType="getUserInfo" type="primary">
+        <image class="wechat" src="../../resource/images/wx1.png"></image>
+        <text>微信登陆</text>
+    </button>
+</view>

@@ -1,0 +1,14 @@
+<view class="shi_zhuti">
+    <image class="shi_yicxsh" src="../../resource/images/bi1.png"></image>
+    <view class="shi_zhongbu">
+        <view class="shi_userInfo">
+            <image src="{{userInfo.avatarUrl}}"></image>
+            <text>{{userInfo.nickName}}</text>
+        </view>
+        <text class="shi_jijianghkau">挑战失败</text>
+        <text class="shi_ZJIZL">再接再厉哦~</text>
+        <view class="shi_guode">获得更多</view>
+        <view class="shi_gsac">获得更多</view>
+        <text class="shi_gsali">联系客服</text>
+    </view>
+</view>

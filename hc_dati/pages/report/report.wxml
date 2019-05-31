@@ -1,0 +1,6 @@
+<view class="report">
+    <icon size="100" type="success"></icon>
+    <text class="tiusa">投诉成功</text>
+    <text class="cajnyu">感谢你的参与，微信坚决反对色情、暴力、欺诈、等违规信息，我们会认真处理你的投诉，维护绿色、健康的网络环境</text>
+    <button bindtap="tiao" class="avgb" formType="submit" type="primary">确定</button>
+</view>

@@ -1,0 +1,660 @@
+<import src="../../../wxParse/wxParse.wxml"></import>
+<view class="total" hidden="{{stake==0?'':true}}">
+    <image class="total_img" src="{{bg_color}}"></image>
+    <scroll-view class="{{chao?'bcshad':'overui'}}" data-indexof="1" hidden="{{indexof==1?'':true}}" scrollY="true" style="height:86%;">
+        <view class="datigna">
+            <image class="bigback" src="{{daoh}}"></image>
+            <form bindsubmit="submitInfo" reportSubmit="true">
+                <button formType="submit" hoverClass="none" style="position:none;display:flex;width:100%;height:100%;">
+                    <image bindtap="tianzhu" class="datada" src="{{zfan}}" wx:if="{{zfan}}"></image>
+                </button>
+            </form>
+            <view class="zuda">
+                <image bindtap="guize" class="guizetu" src="../../resource/images/gui.png"></image>
+                <image bindtap="savsd" class="bang" data-indexof="4" src="../../resource/images/bang.png"></image>
+                <button bindtap="kefu" class="kefuca" hoverClass="none" openType="contact">
+                    <image src="../../resource/images/kefuubai.png"></image>
+                </button>
+            </view>
+        </view>
+        <view class="jihuui" style="background:{{yanse_bg}};">
+            <button class="jihuui_xu" hoverClass="none" openType="share">
+                <image src="{{huodejihuitext}}"></image>
+            </button>
+            <view class="jihuiad">
+                <view bindtap="pay" class="goumaidejif" data-id="{{item.goods_id}}" data-index="{{index}}" wx:if="{{pay_status==0||pay_status==1}}" wx:for="{{goumai}}">
+                    <view class="goumai_davh">
+                        <text>{{item.name}}</text>
+                        <text>{{item.miaosu}}</text>
+                    </view>
+                    <image class="ji1" src="{{item.img}}"></image>
+                </view>
+                <button bindtap="pay" class="goumaidejif" data-id="{{item.goods_id}}" data-index="{{index}}" openType="contact" wx:if="{{pay_status==2}}" wx:for="{{goumai}}">
+                    <view class="goumai_davh">
+                        <text>{{item.name}}</text>
+                        <text>{{item.miaosu}}</text>
+                    </view>
+                    <image class="ji1" src="{{item.img}}"></image>
+                </button>
+            </view>
+        </view>
+        <view class="{{gui?'none_gui':'qiandao_dui'}}">
+            <view class="qiandao_one">
+                <image bindtap="gb_dui" class="gb" src="../../resource/images/gb.png"></image>
+                <view class="asjv xsaas">
+                    <view class="qiuvsnvbsdfb">
+                        <text>1</text>
+                        <view class="yuview">{{guize1}}</view>
+                    </view>
+                    <view class="qiuvsnvbsdfb">
+                        <text>2</text>
+                        <view class="yuview">{{guize2}}</view>
+                    </view>
+                    <view class="qiuvsnvbsdfb">
+                        <text>3</text>
+                        <view class="yuview">{{guize3}}</view>
+                    </view>
+                    <view class="qiuvsnvbsdfb">
+                        <text>4</text>
+                        <view class="yuview">{{guize4}}</view>
+                    </view>
+                </view>
+                <button bindtap="kefu" class="lxasjca" openType="contact">联系客服</button>
+            </view>
+        </view>
+        <view class="lingqujianpin">
+            <image bindtap="tiaoe" class="apic9986" data-id="{{guanggao3_appid}}" data-page="{{guanggao3_page}}" hidden="{{guanggao3_shenhe==1?'':true}}" src="{{guanggao3_img}}" style="border-radius:20rpx;padding:0;"></image>
+            <button bindtap="kefu" class="more_yuaaaas" openType="contact" wx:if="{{lianxi!=''}}">
+                <image src="{{lianxi}} "></image>
+            </button>
+            <view class="more_sufn" wx:if="{{xsjiangpin_status==1}}" wx:for="{{jiangpin}}">
+                <image bindtap="xiangqif" data-id="{{item.id}}" data-name="{{item.name}}" src=" {{item.thumb}}"></image>
+                <view bindtap="Challenge" class="more_gongis" data-id="{{item.id}}">
+                    <text>{{item.name}}</text>
+                    <view class="more_yuas">立即领取</view>
+                </view>
+            </view>
+            <ad style="margin:0 auto;margin-bottom:20rpx;display:block;width:100%!important;height:200rpx!important;" unitId="{{liuliangzhu}}" wx:if="{liuliangzhu!=''}}"></ad>
+        </view>
+    </scroll-view>
+    <scroll-view class="打卡规则 bcshad" data-indexof="2" hidden="{{indexof==2?'':true}}" scrollY="true" style="padding:0;height:100%;">
+        <button bindtap="guanzhu" class="dianf" hoverClass="none" openType="contact">
+            <image class="gbgzh" src="{{guanzhu_str}}"></image>
+        </button>
+        <view class="more_punchte">
+            <image class="yicxsh" src="{{fenlei_beijing}}"></image>
+            <view class="caiweb" hidden="{{fenlei_status==2?'':true}}">
+                <view bindtap="gohome" class="yigege qite" data-id="{{item.id}}" wx:for="{{fenlei_pic}}">
+                    <image src="{{item.pic}}"></image>
+                    <text>{{item.name}}</text>
+                </view>
+            </view>
+            <view class="caiwebtwo" hidden="{{fenlei_status==1?'':true}}">
+                <image bindtap="gohome" data-id="{{item.id}}" src="{{item.pic}}" wx:for="{{fenlei_pic}}"></image>
+            </view>
+            <view class="caiwebhree" hidden="{{fenlei_status==0?'':true}}">
+                <image bindtap="gohome" data-id="{{item.id}}" src="{{item.pic}}" wx:for="{{fenlei_pic}}"></image>
+            </view>
+        </view>
+    </scroll-view>
+    <scroll-view class="{{chao?'bcshad':'overui'}}" data-indexof="3" hidden="{{indexof==3?'':true}}" scrollY="true" style="background:#fff;height:86%;">
+        <view class="teou">
+            <view class="xiezhe">
+                <image src="../../resource/images/cdasvds_02.jpg"></image>
+            </view>
+            <view class="ueinfora">
+                <image src="{{userInfo.avatarUrl}}"></image>
+                <text>{{userInfo.nickName}}</text>
+            </view>
+            <view class="wodezhr">
+                <view bindtap="lingqu" class="wodezhr_jisa">
+                    <image src="{{wodejiangpin_pic}}"></image>
+                </view>
+                <button bindtap="kefu" class="wodezhr_jisa" hoverClass="none" openType="contact">
+                    <image src="{{lianxiwomen_pic}}"></image>
+                </button>
+            </view>
+        </view>
+        <view class="beijgnbn"></view>
+        <view class="dakdu">
+            <view class="qic">
+                <text class="gdzltz">更多智力挑战</text>
+               <!-- <text bindtap="tousu" class="tousu">投诉</text>-->
+            </view>
+            <view class="jifentuijia">
+                <view class="yishif bovvfs">
+                    <text class="sanhsifli9">{{jihui}}</text>
+                    <text>机会</text>
+                </view>
+                <view class="yishif bovvfs">
+                    <text class="">{{yitiaozhan}}</text>
+                    <text>已挑战</text>
+                </view>
+                <view bindtap="yaoqing" class="yishif ">
+                    <text class="">{{yqm}}</text>
+                    <text>邀请码</text>
+                </view>
+            </view>
+            <view class="tiaohunsv">
+                <view bindtap="asd" class="kaiyu" data-id="{{item.appid}}" style="margin-top:40rpx;" wx:for="{{guanggao}}">
+                    <image class="ziidiimg" src="{{item.img}}"></image>
+                    <view class="zidizh">
+                        <text>{{item.name}}</text>
+                        <text>{{item.miaosu}}</text>
+                    </view>
+                    <text class="zidiqu">{{item.qzq}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="{{dakatwo?'nonetwo':'qiandaotwo'}}">
+            <view class="qiandao_oneav">
+                <image bindtap="gbtwo" class="gb" src="../../resource/images/gb.png"></image>
+                <view class="asjv">
+                    <text class="suc">获得更多挑战机会</text>
+                    <button class="tiah" openType="share">
+                        <image class="fhsh" src="../../resource/images/tzbj.png"></image>
+                        <view class="tiah_one tiah_yua">
+                            <text>{{huodejihuititle}}</text>
+                            <text>{{huodejihuistr}}</text>
+                        </view>
+                        <view class="tiah_two tiah_yua">
+                            <text>免费</text>
+                            <text>2元</text>
+                        </view>
+                    </button>
+                    <view bindtap="pay" class="tiah" data-id="{{item.goods_id}}" openType="contact" wx:for="{{goumai}}">
+                        <image class="fhsh" src="../../resource/images/tzbj.png"></image>
+                        <view class="tiah_one">
+                            <text>{{item.name}}</text>
+                            <text>{{item.miaosu}}</text>
+                        </view>
+                        <view class="tiah_two">
+                            <text>{{item.xianjia}}元</text>
+                            <text>{{item.yuanjia}}元</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="banc" wx:if="{{showModalStatus}}">
+            <view animation="{{animationData}}" class="{{system=='iOS'?'qicgdtwo':'qicgd'}}">
+                <view class="fenxiang_a">
+                    <button bindtap="fenxaiocsdad" class="fenxiang_b" openType="share">
+                        <image src="../../resource/images/fenyi.png"></image>
+                        <text>转发给朋友</text>
+                    </button>
+                    <view bindtap="ofFriends" class="fenxiang_b">
+                        <image src="../../resource/images/fener.png"></image>
+                        <text>转发到朋友圈</text>
+                    </view>
+                </view>
+                <text bindtap="quxiaocd" class="quxia">取消</text>
+            </view>
+        </view>
+        <view class="buidv" wx:if="{{fenxia}}">
+            <view class="buidv_ko">
+                <view class="fxpyq">转发朋友圈</view>
+                <image class="tuxiang" src="{{ofFriendsimg}}"></image>
+                <text bindtap="baocun" class="idagg">点击保存到相册转发朋友圈</text>
+            </view>
+            <image bindtap="duabnb" class="duabnb" src="../../resource/images/guna.png"></image>
+        </view>
+    </scroll-view>
+    <view class="{{audi?'none':'shi_zhuti'}}">
+        <image class="shi_yicxsh" src="../../resource/images/bi1.png"></image>
+        <view class="shi_zhongbu">
+            <view class="shi_userInfo">
+                <image src="{{userInfo.avatarUrl}}"></image>
+                <text>{{userInfo.nickName}}</text>
+            </view>
+            <text class="shi_jijianghkau">挑战失败</text>
+            <text class="shi_ZJIZL">再接再厉哦~</text>
+            <view class="kuang">
+                <image animation="{{fangda}}" class="paiweiimg" src="../../resource/images/311229099764752061.png"></image>
+            </view>
+            <view animation="{{fangda}}" class="wenju">稳居排行榜第{{awards}}名</view>
+            <view bindtap="hdgd" class="shi_guode">获得更多</view>
+            <view bindtap="zailai" class="shi_gsac">再来一次</view>
+            <button bindtap="kefu" class="shi_gsali" openType="contact">联系客服</button>
+        </view>
+        <view class="tabber tabbertwo" style="background:{{dibu_color}};">
+            <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true">
+                <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
+                    <view bindtap="index" data-indexof="1">
+                        <image class="tabber_img" hidden="{{indexof==1?'':true}}" src="{{shouye_img}}"></image>
+                        <image class="tabber_img" hidden="{{indexof!=1?'':true}}" src="{{shouye_img}}"></image>
+                        <text class="{{indexof==1?'white':'white'}}" wx:if="{{shouyename}}">{{shouyename}}</text>
+                    </view>
+                </button>
+            </form>
+            <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true">
+                <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
+                    <view bindtap="savsd" data-indexof="4">
+                        <image class="tabber_img" hidden="{{indexof==4?'':true}}" src="{{paihangbang_img}}"></image>
+                        <image class="tabber_img" hidden="{{indexof!=4?'':true}}" src="{{paihangbang_img}}"></image>
+                        <text class="{{indexof==2?'white':'white'}}" wx:if="{{paihangbangname}}">{{paihangbangname}}</text>
+                    </view>
+                </button>
+            </form>
+            <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true" wx:if="{{fenlei==1}}">
+                <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
+                    <view bindtap="savsd" data-indexof="2">
+                        <image class="tabber_img" hidden="{{indexof==2?'':true}}" src="{{fenlei_img}}"></image>
+                        <image class="tabber_img" hidden="{{indexof!=2?'':true}}" src="{{fenlei_img}}"></image>
+                        <text class="{{indexof==2?'white':'white'}}" wx:if="{{fenleiname}}">{{fenleiname}}</text>
+                    </view>
+                </button>
+            </form>
+            <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true">
+                <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
+                    <view bindtap="guafen" data-indexof="3">
+                        <image class="tabber_img" hidden="{{indexof==3?'':true}}" src="{{wode_img}}"></image>
+                        <image class="tabber_img" hidden="{{indexof!=3?'':true}}" src="{{wode_img}}"></image>
+                        <text class="{{indexof==3?'white':'white'}}" wx:if="{{wodename}}">{{wodename}}</text>
+                    </view>
+                </button>
+            </form>
+        </view>
+    </view>
+    <scroll-view class="打卡规则 bcshad" data-indexof="4" hidden="{{indexof==4?'':true}}" scrollY="true" style="padding:0;height:85%;overflow:auto;">
+        <swiper autoplay="{{autoplay}}" circular="{{circular}}" class="qitaswper" indicatorDots="{{indicatordots}}" interval="{{interval}}" vertical="{{vertical}}" wx:if="{{huojiang.length>0}}">
+            <swiper-item bindtap="wining" class="qitaswpercaa" wx:for="{{huojiang}}">
+                <text>{{item}}</text>
+            </swiper-item>
+        </swiper>
+        <view class="daiugvbdsiuvbsd">
+            <view class="dauvbs_one">
+                <image class="dauvbs_qicvdsvb" src="{{pxnum_img}}"></image>
+                <view class="dauvbs_text">当前参与人数</view>
+                <view class="dauvbs_advdsa">
+                    <text>{{num1}}</text>
+                    <text>人</text>
+                </view>
+            </view>
+            <view class="dauvbs_two">
+                <image class="dauvbs_qicvdsvb" src="{{pxdaojishi_img}}"></image>
+                <view class="dauvbs_casvs">距本期结束还有</view>
+                <view class="dauvbs_daoji">
+                    <view class="dauvbs_daojia">
+                        <text>{{countDownDay}}</text>
+                        <text>天</text>
+                    </view>
+                    <text class="dauvbs_dian">:</text>
+                    <view class="dauvbs_daojia">
+                        <text>{{countDownHour}}</text>
+                        <text>小时</text>
+                    </view>
+                    <text class="dauvbs_dian">:</text>
+                    <view class="dauvbs_daojia">
+                        <text>{{countDownMinute}}</text>
+                        <text>分</text>
+                    </view>
+                    <text class="dauvbs_dian">:</text>
+                    <view class="dauvbs_daojia">
+                        <text>{{countDownSecond}}</text>
+                        <text>秒</text>
+                    </view>
+                </view>
+            </view>
+            <view bindtap="guizetwoac" class="dauvbs_three">
+                <image class="dauvbs_qicvdsvb" src="{{pxguize_img}}"></image>
+                <text class="dauvbs_threetetx">活动规则</text>
+            </view>
+        </view>
+        <view bindtap="redto" class="hogbaid" wx:if="{{lj_stact!=0}}">
+            <view class="dianhu">
+                <image bindtap="quaca" class="gujgan" src="../../resource/images/yanfd.png"></image>
+                <image bindtap="redpacket" class="tcbna" src="../../resource/images/dtgg_03.png"></image>
+            </view>
+        </view>
+        <view class="scroll_box">
+            <scroll-view scrollX class="scroll-view_x" style="width: auto;overflow:hidden;">
+                <view class="sahvcdisau">
+                    <view bindtap="goods" class="item_list" data-id="{{item.id}}" wx:for="{{jiangpintom}}">
+                        <image class="item_book_img" mode="aspectFill" src="{{item.thumb}}"></image>
+                        <text>{{item.ranking_name}}</text>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+        <view class="shengji">
+            <view class="classname">
+                <view class="ranking">
+                    <view class="pauihnag" data-index="{{index}}" style="background:{{pxbpx_bkg}};" wx:if="{{index<tiaotwo}}" wx:for="{{zhililist}}">
+                        <view class="pauihnag_one">
+                            <image src="{{item.head_pic}}"></image>
+                            <text class="avyv">{{item.nick_name}}</text>
+                        </view>
+                        <text class="pauihnag_twotexasast">挑战成功{{item.dati_success}}次</text>
+                        <view class="yfua">
+                            <view class="pauihnag_two" data-index="{{index}}">
+                                <text class="pauihnag_twotext">第</text>
+                                <text class="pauihnag_twotexast" data-index="{{index}}">{{index+1}}</text>
+                                <text class="pauihnag_twotext">名</text>
+                            </view>
+                        </view>
+                    </view>
+                   <!-- <view bindtap="gaotwo" class="{{ycsavua?'none':'pauihnag'}}" style="background:{{pxbpx_bkg}};">
+                        <text class="jiazaigengduo">加载更多</text>
+                    </view>-->
+                </view>
+                <view class="ranking">
+                    <text class="pai">毅力排行榜</text>
+                    <view class="gao">
+                        <view class="pauihnag" data-index="{{index}}" style="background:{{pxbpx_bkg}};" wx:if="{{jzgd<tiao}}" wx:for="{{brains.yili}}" wx:for-index="jzgd">
+                            <view class="pauihnag_one pauihnag_onea">
+                                <view class="quanquanim" data-index="{{jzgd}}" wx:if="{{jzgd==0}}">
+                                    <image src="../../resource/images/1hao_03.png" style="width:100%;height:80%;"></image>
+                                </view>
+                                <view class="quanquanim" data-index="{{jzgd}}" wx:if="{{jzgd==1}}">
+                                    <image src="../../resource/images/2hao_06.png" style="width:100%;height:80%;"></image>
+                                </view>
+                                <view class="quanquanim" data-index="{{jzgd}}" wx:if="{{jzgd==2}}">
+                                    <image src="../../resource/images/3hao_08.png" style="width:100%;height:80%;"></image>
+                                </view>
+                                <view class="quanquanb" data-index="{{jzgd}}" wx:if="{{jzgd>2}}">
+                                    <view>{{jzgd+1}}</view>
+                                </view>
+                                <image src="{{item.head_pic}}"></image>
+                                <text class="avyv">{{item.nick_name}}</text>
+                            </view>
+                            <view class="pauihnag_two">
+                                <text class="pauihnag_twotext">连续答题</text>
+                                <text class="pauihnag_twotexast">{{item.dati_sum}}</text>
+                                <text class="pauihnag_twotext">次</text>
+                            </view>
+                        </view>
+                    </view>
+                   <!-- <view bindtap="gao" class="{{ycsavu?'none':'pauihnag'}}" style="background:{{pxbpx_bkg}};">
+                        <text class="jiazaigengduo">加载更多</text>
+                    </view>-->
+                </view>
+                <image bindtap="tiao" class="guanggai" src="{{tupian}}" wx:if="{{tupian}}"></image>
+            </view>
+            <view class="classname">
+                <view class="ranking"></view>
+            </view>
+        </view>
+        <view class="{{guitwo?'none_gui':'qiandao_dui'}}">
+            <view class="qiandao_one">
+                <image bindtap="gb_duitwo" class="gb" src="../../resource/images/gb.png"></image>
+                <view class="asjv xsaas">
+                    <view class="qiuvsnvbsdfb">
+                        <text>1</text>
+                        <view class="yuview">{{pxguize1}}</view>
+                    </view>
+                    <view class="qiuvsnvbsdfb">
+                        <text>2</text>
+                        <view class="yuview">{{pxguize2}}</view>
+                    </view>
+                    <view class="qiuvsnvbsdfb">
+                        <text>3</text>
+                        <view class="yuview">{{pxguize3}}</view>
+                    </view>
+                    <view class="qiuvsnvbsdfb">
+                        <text>4</text>
+                        <view class="yuview">{{pxguize4}}</view>
+                    </view>
+                </view>
+                <button bindtap="kefu" class="lxasjca" openType="contact">联系客服</button>
+            </view>
+        </view>
+        <view class="tanchua" wx:if="{{tanch}}">
+            <view bindtap="tanchua_guan" class="tanchua_guan">
+                <image src="../../resource/images/x.png"></image>
+            </view>
+            <view class="tanchua_one">
+                <image class="tanchua_onebag" src="../../resource/images/445574013126823221.png"></image>
+                <text class="tanchua_onetexto">第{{brains.qiming}}期开奖了</text>
+                <text class="tanchua_onetextw">{{brains.mingci_str}}</text>
+                <text class="tanchua_onetextt">{{brains.px_str}}</text>
+            </view>
+            <view bindtap="tanchua_guan" class="tanchua_two">
+                <image src="../../resource/images/445574013126823221_03.png"></image>
+                <text class="tanchua_liji">{{brains.anniutishi}}</text>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="tabber" style=" background:{{dibu_color}};">
+        <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true">
+            <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
+                <view bindtap="index" data-indexof="1">
+                    <image class="tabber_img" hidden="{{indexof==1?'':true}}" src="{{shouye_img}}"></image>
+                    <image class="tabber_img" hidden="{{indexof!=1?'':true}}" src="{{shouye_img}}"></image>
+                    <text class="{{indexof==1?'white':'white'}}" wx:if="{{shouyename}}">{{shouyename}}</text>
+                </view>
+            </button>
+        </form>
+        <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true">
+            <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
+                <view bindtap="savsd" data-indexof="4">
+                    <image class="tabber_img" hidden="{{indexof==4?'':true}}" src="{{paihangbang_img}}"></image>
+                    <image class="tabber_img" hidden="{{indexof!=4?'':true}}" src="{{paihangbang_img}}"></image>
+                    <text class="{{indexof==2?'white':'white'}}" wx:if="{{paihangbangname}}">{{paihangbangname}}</text>
+                </view>
+            </button>
+        </form>
+        <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true" wx:if="{{fenlei==1}}">
+            <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
+                <view bindtap="savsdtwo" data-indexof="2">
+                    <image class="tabber_img" hidden="{{indexof==2?'':true}}" src="{{fenlei_img}}"></image>
+                    <image class="tabber_img" hidden="{{indexof!=2?'':true}}" src="{{fenlei_img}}"></image>
+                    <text class="{{indexof==2?'white':'white'}}" wx:if="{{fenleiname}}">{{fenleiname}}</text>
+                </view>
+            </button>
+        </form>
+        <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true">
+            <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
+                <view bindtap="guafen" data-indexof="3">
+                    <image class="tabber_img" hidden="{{indexof==3?'':true}}" src="{{wode_img}}"></image>
+                    <image class="tabber_img" hidden="{{indexof!=3?'':true}}" src="{{wode_img}}"></image>
+                    <text class="{{indexof==3?'white':'white'}}" wx:if="{{wodename}}">{{wodename}}</text>
+                </view>
+            </button>
+        </form>
+    </view>
+</view>
+<view hidden="{{stake==1&&shenhe_status==1?'':true}}" style="width:100%;height:100%;background:#336699">
+    <view hidden="{{boss==0?'':true}}">
+        <view bindtap="actionSheetTap" class="title">
+            <text class="pull-left"> {{'<<'}}</text>
+    {{dad}}
+  <text class="pull-right"> {{'>>'}}</text>
+        </view>
+        <view class="time">
+            <view class="big-circle blue first">
+                <view animation="{{leftAnimationData}}" class="big-circle right blue1"></view>
+                <view class="circle whitea">
+                    <view class="text">{{leftTime}}s</view>
+                </view>
+            </view>
+            <view class="big-circle blue second">
+                <view animation="{{rightAnimationData}}" class="big-circle right blue1"></view>
+                <view class="circle whitea">
+                    <view class="text">{{rightTime}}s</view>
+                </view>
+            </view>
+        </view>
+        <view class="btnGroup">
+            <button bindtap="leftStart" class="btn" hoverClass="btnhove">正方发言</button>
+            <button bindtap="rightStart" class="btn" hoverClass="btnhove">反方发言</button>
+        </view>
+        <view class="desc">
+            <text>{{desc}}</text>
+        </view>
+        <audio loop id="myAudio" src="{{src}}"></audio>
+        <action-sheet bindchange="actionSheetChange" hidden="{{actionSheetHidden}}">
+            <action-sheet-item bindtap="bindItemTap" class="item choice" id="{{item.id}}" wx:for="{{actionSheetItems}}" wx:key="userInfoListId">{{item.name}}</action-sheet-item>
+            <action-sheet-cancel class="cancel choice">取消</action-sheet-cancel>
+        </action-sheet>
+    </view>
+    <view>
+        <view class="container" hidden="{{boss==1?'':true}}">
+            <view class="section-title">
+      立论阶段 <switch checked bindchange="switchChange" class="pull-right" id="config1"></switch>
+            </view>
+            <view class="hr"></view>
+            <view class="section section_gap">
+                <text class="section__title">时间限制（秒）</text>
+                <view class="body-view">
+                    <slider showValue bindchange="sliderChange" id="config1" max="200" min="10" value="{{configs.config1.time}}"></slider>
+                </view>
+            </view>
+            <view>
+                <text>声音提醒</text>
+                <radio-group bindchange="radioChange" class="radio-group" id="config1">
+                    <label class="radio">
+                        <radio checked value="15"></radio>提前15秒</label>
+                    <label class="radio">
+                        <radio checked value="10"></radio>提前10秒</label>
+                    <label class="radio">
+                        <radio checked value="5"></radio>提前5秒</label>
+                </radio-group>
+            </view>
+            <view class="section-title">
+      驳立论阶段 <switch checked bindchange="switchChange" class="pull-right" id="config2"></switch>
+            </view>
+            <view class="hr"></view>
+            <view class="section section_gap">
+                <text class="section__title">时间限制（秒）</text>
+                <view class="body-view">
+                    <slider showValue bindchange="sliderChange" id="config2" max="200" min="10" value="{{configs.config2.time}}"></slider>
+                </view>
+            </view>
+            <view>
+                <text>声音提醒</text>
+                <radio-group bindchange="radioChange" class="radio-group" id="config2">
+                    <label class="radio">
+                        <radio checked value="15"></radio>提前15秒</label>
+                    <label class="radio">
+                        <radio checked value="10"></radio>提前10秒</label>
+                    <label class="radio">
+                        <radio checked value="5"></radio>提前5秒</label>
+                </radio-group>
+            </view>
+            <view class="section-title">
+      质辩环节 <switch checked bindchange="switchChange" class="pull-right" id="config3"></switch>
+            </view>
+            <view class="hr"></view>
+            <view class="section section_gap">
+                <text class="section__title">时间限制（秒）</text>
+                <view class="body-view">
+                    <slider showValue bindchange="sliderChange" id="config3" max="200" min="10" value="{{configs.config3.time}}"></slider>
+                </view>
+            </view>
+            <view>
+                <text>声音提醒</text>
+                <radio-group bindchange="radioChange" class="radio-group" id="config3">
+                    <label class="radio">
+                        <radio checked value="15"></radio>提前15秒</label>
+                    <label class="radio">
+                        <radio checked value="10"></radio>提前10秒</label>
+                    <label class="radio">
+                        <radio checked value="5"></radio>提前5秒</label>
+                </radio-group>
+            </view>
+            <view class="section-title">
+      自由辩论 <switch checked bindchange="switchChange" class="pull-right" id="config4"></switch>
+            </view>
+            <view class="hr"></view>
+            <view class="section section_gap">
+                <text class="section__title">时间限制（秒）</text>
+                <view class="body-view">
+                    <slider showValue bindchange="sliderChange" id="config4" max="200" min="10" value="{{configs.config4.time}}"></slider>
+                </view>
+            </view>
+            <view>
+                <text>声音提醒</text>
+                <radio-group bindchange="radioChange" class="radio-group" id="config4">
+                    <label class="radio">
+                        <radio checked value="15"></radio>提前15秒</label>
+                    <label class="radio">
+                        <radio checked value="10"></radio>提前10秒</label>
+                    <label class="radio">
+                        <radio checked value="5"></radio>提前5秒</label>
+                </radio-group>
+            </view>
+            <view class="section-title">
+      总结陈词 <switch checked bindchange="switchChange" class="pull-right" id="config5"></switch>
+            </view>
+            <view class="hr"></view>
+            <view class="section section_gap">
+                <text class="section__title">时间限制（秒）</text>
+                <view class="body-view">
+                    <slider showValue bindchange="sliderChange" id="config5" max="200" min="10" value="{{configs.config5.time}}"></slider>
+                </view>
+            </view>
+            <view>
+                <text>声音提醒</text>
+                <radio-group bindchange="radioChange" class="radio-group" id="config5">
+                    <label class="radio">
+                        <radio checked value="15"></radio>提前15秒</label>
+                    <label class="radio">
+                        <radio checked value="10"></radio>提前10秒</label>
+                    <label class="radio">
+                        <radio checked value="5"></radio>提前5秒</label>
+                </radio-group>
+            </view>
+        </view>
+    </view>
+    <view class="pians">
+        <view bindtap="qirhuav" class="pians_twO" data-index="0">
+            <image hidden="{{boss==0?'':true}}" src="../../resource/images/reying.png"></image>
+            <image hidden="{{boss==1?'':true}}" src="../../resource/images/reying-1.png"></image>
+            <text>计时</text>
+        </view>
+        <view bindtap="qirhuav" class="pians_twO" data-index="1">
+            <image hidden="{{boss==1?'':true}}" src="../../resource/images/search.png"></image>
+            <image hidden="{{boss==0?'':true}}" src="../../resource/images/search-1.png"></image>
+            <text>计时</text>
+        </view>
+    </view>
+</view>
+<view class="pian" hidden="{{stake==1&&shenhe_status==0?'':true}}">
+    <image class="pian_img" src="../../resource/images/bei_02.png"></image>
+    <view class="pian_sacba">
+        <view class="pian_ssa">
+            <image class="pian_zheng" src="../../resource/images/tou_03.png"></image>
+            <image class="pian_tyopu" src="{{userInfo.avatarUrl}}"></image>
+            <text class="pian_tyoputext">{{userInfo.nickName}}</text>
+        </view>
+        <view class="pian_pubu">
+            <view bindtap="xiangqig" class="pianbli pian_liu" data-id="{{item.id}}" wx:if="{{index==0}}" wx:for="{{jiaoyu_shenhe}}">
+                <view class="pian_yu">
+                    <image src="{{item.img}}"></image>
+                    <text>{{item.name}}</text>
+                </view>
+            </view>
+            <view bindtap="xiangqig" class="pianbli pian_liutwo" data-id="{{item.id}}" wx:if="{{index==1}}" wx:for="{{jiaoyu_shenhe}}">
+                <view class="pian_yu">
+                    <image src="{{item.img}}"></image>
+                    <text>{{item.name}}</text>
+                </view>
+            </view>
+            <view bindtap="xiangqig" class="pianbli pian_liuthree" data-id="{{item.id}}" wx:if="{{index==2}}" wx:for="{{jiaoyu_shenhe}}">
+                <view class="pian_yu">
+                    <image src="{{item.img}}"></image>
+                    <text>{{item.name}}</text>
+                </view>
+            </view>
+            <view bindtap="xiangqig" class="pianbli pian_liufore" data-id="{{item.id}}" wx:if="{{index==3}}" wx:for="{{jiaoyu_shenhe}}">
+                <view class="pian_yu">
+                    <image src="{{item.img}}"></image>
+                    <text>{{item.name}}</text>
+                </view>
+            </view>
+            <view bindtap="xiangqig" class="pianbli pian_liufive" data-id="{{item.id}}" wx:if="{{index==4}}" wx:for="{{jiaoyu_shenhe}}">
+                <view class="pian_yu">
+                    <image src="{{item.img}}"></image>
+                    <text>{{item.name}}</text>
+                </view>
+            </view>
+            <view bindtap="xiangqig" class="pianbli pian_liusix" data-id="{{item.id}}" wx:if="{{index==5}}" wx:for="{{jiaoyu_shenhe}}">
+                <view class="pian_yu">
+                    <image src="{{item.img}}"></image>
+                    <text>{{item.name}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,20 @@
+<view class="tizf">
+    <view class="account">
+        <text>账户余额</text>
+        <text>{{qiavdata.money}}元</text>
+    </view>
+    <view class="account">
+        <text>提现金额</text>
+    </view>
+    <view class="ishg">
+        <text>¥</text>
+        <input bindinput="bindHideKeyboard" type="digit" value="{{qicc}}"></input>
+    </view>
+    <view class="wxhb">微信单笔提现金额最低{{qiavdata.tixian}}元</view>
+    <view class="tuidfhha">
+        <text>提现到微信钱包，</text>
+        <text bindtap="quan">全部提现</text>
+    </view>
+    <button bindtap="tixian" class="cdav">提现</button>
+    <view class="yhsavso">预计1-5个工作日到账</view>
+</view>

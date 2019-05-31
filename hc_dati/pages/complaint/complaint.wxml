@@ -1,0 +1,15 @@
+<view class="section section_gap">
+    <view class="section__title">请选择投诉原因</view>
+    <radio-group bindchange="radioChange" class="group">
+        <view bindtap="jiayi" class="label-2" wx:for="{{radioItems}}">
+            <radio hidden checked="{{item.checked}}" id="{{item.name}}" value="{{item.name}}"></radio>
+            <label class="label-2__text" for="{{item.name}}">
+                <text>{{item.name}}</text>
+                <view class="label-2__icon">
+                    <image class="label-2__icon-checked" src="../../resource/images/dui.png" style="opacity:{{item.checked?1:0}}"></image>
+                </view>
+            </label>
+        </view>
+    </radio-group>
+</view>
+<button bindtap="tiao" class="avgb" formType="submit" type="primary">提交</button>

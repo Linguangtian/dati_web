@@ -1,0 +1,100 @@
+page {
+    background: #f5f5f5;
+    width: 100%;
+    height: 100%;
+}
+
+.zongti {
+    width: 100%;
+    padding: 34rpx;
+    box-sizing: border-box;
+}
+
+.zongti_one {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40rpx;
+}
+
+.zongti_oneing {
+    width: 124rpx;
+    height: 124rpx;
+}
+
+.zongti_two {
+    width: 80%;
+    flex-direction: column;
+    margin-left: 40rpx;
+    display: flex;
+}
+
+.zong_ncheng {
+    color: #989898;
+    font-size: 26rpx;
+    margin-bottom: 20rpx;
+}
+
+.zongti_three {
+    width: 90%;
+    height: 386rpx;
+    border-radius: 15rpx;
+    position: relative;
+    background: #fff;
+    box-shadow: 1px 1px 2px 2px #eee;
+}
+
+.zongti_three::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    position: absolute;
+    top: 8%;
+    left: -7%;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+.qotda {
+    width: 100%;
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20rpx;
+}
+
+.qotda text {
+    color: #c7694d;
+    font-size: 27rpx;
+}
+
+.qotda text:first-child {
+    color: #000;
+    margin-right: 10rpx;
+}
+
+.qitavs {
+    width: 100%;
+    padding: 0 20rpx 20rpx 20rpx;
+    box-sizing: border-box;
+}
+
+.xiangjf {
+    width: 100%;
+    height: 241rpx;
+    display: flex;
+}
+
+.diyi {
+    height: 47rpx;
+    width: 100%;
+    color: #999999;
+    font-size: 27rpx;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0 20rpx;
+    border-top: #efefef 2rpx solid;
+}

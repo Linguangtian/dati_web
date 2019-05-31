@@ -1,0 +1,29 @@
+<view class="qieh">
+    <text bindtap="jiang" class="{{one==index?'tes':''}}" data-index="{{index}}" wx:for="{{jiang}}">{{item}}</text>
+</view>
+<view class="more_sufn" wx:if="{{one==0}}" wx:for="{{tudof}}">
+    <image src="{{item.thumb}}"></image>
+    <view class="more_gongis">
+        <view class="digasop">
+            <text>奖品名：{{item.name}}</text>
+            <text class="more_yuas">领取时间：{{item.addtime}}</text>
+        </view>
+        <view class="digasop">
+            <text>{{item.danhao}}{{item.kuaididan}}</text>
+            <text class="more_yuas">{{item.gongsi}}{{item.kuaidigongsi}}</text>
+        </view>
+    </view>
+</view>
+<view class="more_sufn" wx:if="{{one==1}}" wx:for="{{tudoftwo}}">
+    <image src="{{item.thumb}}"></image>
+    <view class="more_gongis">
+        <view class="digasop">
+            <text>奖品名：{{item.name}}</text>
+            <text class="more_yuas">{{item.lingjiang_status}}</text>
+        </view>
+        <view class="digasop">
+            <text>{{item.danhao}}{{item.kuaididan}}</text>
+            <text class="more_yuas">{{item.gongsi}}{{item.kuaidigongsi}}</text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="yuda">{{toubutwo}}</view>
+<view class="input">
+    <view class="yus" style="top:{{juli}}rpx;">
+        <input class="{{item.num==index+1?'lv':'kucaab'}}" data-index="{{index}}" disabled="true" placeholder="{{index+1}}" placeholderStyle="color:#fff;" value="{{item.num}}" wx:for="{{inputtext}}"></input>
+    </view>
+</view>
+<view class="{{isDisabled?'jianpan':'none'}}">
+    <view class="jianpana" wx:if="{{setupstatus==1}}">键盘十秒倒计时{{time}}秒</view>
+    <view bindtap="shuru" class="jianpan_one" data-num="{{item}}" hoverClass="board_bg" hoverStartTime="10" hoverStayTime="80" wx:if="{{yu}}" wx:for="{{shuzi}}">{{item}}</view>
+</view>
+<audio controls="false" id="myAudio" loop="true" name="{{name}}" poster="false" src="{{mp3url}}" style=" visibility:hidden;"></audio>

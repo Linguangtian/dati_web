@@ -1,0 +1,8 @@
+<view class="quanmina">
+    <image class="ajvd" src="../../resource/images/edb6dca505350bc044bbd483fd215d8d.png"></image>
+    <text class="succes">挑战成功</text>
+    <view bindtap="hui" class="tiah">
+        <image class="fhsh" src="../../resource/images/tzbj.png"></image>
+        <text class="tianhz">挑战成功,去领娃娃</text>
+    </view>
+</view>

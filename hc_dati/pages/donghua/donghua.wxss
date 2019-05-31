@@ -1,0 +1,19 @@
+.fusa {
+    width: 100%;
+    height: 500rpx;
+    position: fixed;
+    top: 42%;
+    z-index: -1;
+}
+
+.xianshi {
+    color: #000;
+    font-size: 30rpx;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.yin {
+    opacity: 0;
+    transition: all 1s;
+}

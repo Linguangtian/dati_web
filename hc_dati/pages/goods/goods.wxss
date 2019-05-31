@@ -1,0 +1,91 @@
+.goods_img {
+    width: 100%;
+    height: 753rpx;
+}
+
+.goods {
+    width: 100%;
+    padding: 37rpx 26rpx;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100rpx;
+    box-sizing: border-box;
+}
+
+.goods_ming {
+    color: #2f2f2f;
+    font-size: 30rpx;
+}
+
+.goods_jiajei {
+    color: #888888;
+    font-size: 25rpx;
+    margin-top: 20rpx;
+}
+
+.jiage {
+    color: #ea4d46;
+    font-size: 36rpx;
+    margin-top: 20rpx;
+}
+
+.dibu {
+    width: 100%;
+    height: 115rpx;
+    border-top: 2rpx solid #e2e2e2;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    padding: 0 28rpx;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.dibu text {
+    background: #ea4d46;
+    width: 48%;
+    height: 90rpx;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 38rpx;
+    justify-content: center;
+    border-radius: 15rpx;
+}
+
+.dibu text:first-child {
+    background: #ffc000;
+}
+
+.none {
+    display: none;
+}
+
+.hogbaid {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.dianhu {
+    width: 80%;
+    height: 70%;
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+
+.gujgan {
+    width: 48rpx;
+    height: 48rpx;
+    display: block;
+    position: absolute;
+    top: 36rpx;
+    left: 36rpx;
+}

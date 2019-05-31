@@ -1,0 +1,102 @@
+page {
+    background: #f3f3f3;
+    width: 100%;
+}
+
+.tizf {
+    width: 90%;
+    margin: 0 auto;
+    height: 800rpx;
+    background: #fff;
+    padding: 77rpx 46rpx;
+    box-sizing: border-box;
+    margin-top: 80rpx;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    margin-bottom: 84rpx;
+}
+
+.account text {
+    color: #808080;
+    font-size: 45rpx;
+}
+
+.account text:first-child {
+    padding-right: 53rpx;
+    color: #000000;
+    font-size: 30rpx;
+}
+
+.ishg {
+    width: 100%;
+    border-bottom: 2rpx solid #e7e7e7;
+    display: flex;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    height: 140rpx;
+    align-items: center;
+    position: relative;
+}
+
+.ishg text {
+    color: #080808;
+    font-size: 70rpx;
+    position: absolute;
+    left: 20rpx;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+}
+
+.ishg input {
+    width: 100%;
+    padding: 0 61rpx;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 140rpx;
+    font-size: 80rpx;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+.wxhb {
+    color: #808080;
+    font-size: 25rpx;
+    margin-top: 42rpx;
+}
+
+.tuidfhha text {
+    color: #0024bf;
+    font-size: 22rpx;
+}
+
+.tuidfhha text:first-child {
+    color: #080808;
+    padding-right: 17rpx;
+}
+
+.cdav {
+    width: 95%;
+    height: 70rpx;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 15rpx;
+    background: #1aad19;
+    color: #fefefe;
+    font-size: 29rpx;
+    margin-top: 45rpx;
+}
+
+.yhsavso {
+    width: 100%;
+    text-align: center;
+    color: #858585;
+    font-size: 22rpx;
+    margin-top: 20rpx;
+}

@@ -1,0 +1,62 @@
+<view class="dop">
+    <image class="dop_img" src="../../resource/images/daka.png"></image>
+    <view class="clock">
+        <view class="huah">
+            <image class="avatarUrl" src="{{userInfo.avatarUrl}}"></image>
+            <view class="huah_one">
+                <text>{{userInfo.nickName}}</text>
+                <text>累计赚取{{myzhan.zhuanqu}}（元）</text>
+            </view>
+            <text class="big">{{myzhan.yue}}</text>
+        </view>
+        <view class="qiyavc">
+            <view class="qiyavc_one">
+                <text>{{myzhan.touru}}</text>
+                <text>累计投入（元）</text>
+            </view>
+            <view class="qiyavc_one">
+                <text>{{myzhan.zhuanqu}}</text>
+                <text>累计赚取（元）</text>
+            </view>
+            <view class="qiyavc_one">
+                <text>{{myzhan.tianshu}}</text>
+                <text>成功打卡（天）</text>
+            </view>
+        </view>
+        <view class="havk">
+            <button class="asgvad" openType="share">
+                <image src="../../resource/images/wx3.png"></image>
+                <text>炫耀战绩</text>
+            </button>
+            <view bindtap="tixian" class="asgvad" style="background:none;border:2rpx solid #ffe3ae;">
+                <image src="../../resource/images/as_03.png"></image>
+                <text style="color:#ffe3ae">点击提现</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="dakdu">
+    <view class="dakdu_one">
+        <image src="../../resource/images/mz.png"></image>
+        <text>打卡明细</text>
+    </view>
+    <view class="avvbdf" wx:for="{{mingxi}}">
+        <text class="ycsab">{{item.time}}</text>
+        <text>{{status}}</text>
+        <text>{{item.daka_hongbao}}</text>
+    </view>
+</view>
+<view bindtap="index" class="tabber">
+    <view class="tabber_qi">
+        <image class="tabber_img" src="../../resource/images/11.png"></image>
+        <text class="huang">天天红包</text>
+    </view>
+    <view bindtap="savsd" class="tabber_qi">
+        <image class="tabber_img" src="../../resource/images/22.png"></image>
+        <text class="huang">规则</text>
+    </view>
+    <view class="tabber_qi">
+        <image class="tabber_img" src="../../resource/images/33.png"></image>
+        <text class="white">我的红包</text>
+    </view>
+</view>

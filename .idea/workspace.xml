@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="525c8516-4845-41d5-a9b0-06d26be58d50" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="dati.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hc_dati/pages/dati/dati.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="315" column="14" lean-forward="true" selection-start-line="315" selection-start-column="14" selection-end-line="315" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.wxss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hc_dati/pages/index/index.wxss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="445">
+              <caret line="1745" column="27" lean-forward="true" selection-start-line="1745" selection-start-column="27" selection-end-line="1745" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>wx.getUserInfo</find>
+      <find>getUserInfo</find>
+      <find>opacity</find>
+      <find>attachment</find>
+      <find>parameter</find>
+      <find>datada</find>
+      <find>投诉</find>
+      <find>datad</find>
+      <find>kefuca</find>
+      <find>加载更多</find>
+      <find>tabber</find>
+      <find>80</find>
+      <find>80rpx</find>
+      <find>white</find>
+      <find>.white</find>
+      <find>dati1</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/wxParse/showdown.js" />
+        <option value="$PROJECT_DIR$/hc_dati/pages/index/index.wxml" />
+        <option value="$PROJECT_DIR$/hc_dati/pages/index/index.wxss" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="577" />
+    <option name="y" value="125" />
+    <option name="width" value="1451" />
+    <option name="height" value="974" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="dati_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dati_web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="dati_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dati_web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="hc_dati" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="dati_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dati_web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="hc_dati" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="dati_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dati_web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="hc_dati" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dati" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="dati_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dati_web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="hc_dati" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="E:/web_yuanma/mq" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="525c8516-4845-41d5-a9b0-06d26be58d50" name="Default" comment="" />
+      <created>1559196083303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559196083303</updated>
+      <workItem from="1559196086947" duration="3952000" />
+      <workItem from="1559211840641" duration="4519000" />
+      <workItem from="1559267027681" duration="711000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="9182000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="577" y="125" width="1451" height="974" extended-state="1" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32985657" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50373137" side_tool="true" weight="0.23666666" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" weight="0.32985657" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32985657" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.499391" visible="true" weight="0.18116464" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49893618" weight="0.11162791" />
+      <window_info id="Structure" order="1" sideWeight="0.50060904" side_tool="true" weight="0.14734043" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49626866" weight="0.34533897" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/siteinfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc_dati/pages/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37275">
+          <caret line="1491" column="105" selection-start-line="1491" selection-start-column="105" selection-end-line="1491" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/imap/imap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9025">
+          <caret line="361" column="48" selection-start-line="361" selection-start-column="48" selection-end-line="361" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxParse/showdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7750">
+          <caret line="310" column="62" selection-start-line="310" selection-start-column="62" selection-end-line="310" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc_dati/pages/index/index.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3100">
+          <caret line="124" column="43" selection-start-line="124" selection-start-column="43" selection-end-line="124" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we7/pages/index/index.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we7/pages/index/index.wxss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc_dati/pages/index/index.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43475">
+          <caret line="1739" column="18" lean-forward="true" selection-start-line="1739" selection-start-column="18" selection-end-line="1739" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/siteinfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc_dati/pages/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37275">
+          <caret line="1491" column="105" lean-forward="true" selection-start-line="1491" selection-start-column="105" selection-end-line="1491" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/imap/imap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9025">
+          <caret line="361" column="48" lean-forward="true" selection-start-line="361" selection-start-column="48" selection-end-line="361" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxParse/showdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7925">
+          <caret line="317" column="123" selection-start-line="317" selection-start-column="114" selection-end-line="317" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.config.json" />
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/siteinfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/imap/imap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9025">
+          <caret line="361" column="48" selection-start-line="361" selection-start-column="48" selection-end-line="361" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxParse/showdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7750">
+          <caret line="310" column="62" selection-start-line="310" selection-start-column="62" selection-end-line="310" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we7/pages/index/index.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we7/pages/index/index.wxss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc_dati/pages/index/index.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3100">
+          <caret line="124" column="43" selection-start-line="124" selection-start-column="43" selection-end-line="124" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc_dati/pages/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="1491" column="105" selection-start-line="1491" selection-start-column="105" selection-end-line="1491" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc_dati/pages/dati/dati.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="315" column="14" lean-forward="true" selection-start-line="315" selection-start-column="14" selection-end-line="315" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc_dati/pages/index/index.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="1745" column="27" lean-forward="true" selection-start-line="1745" selection-start-column="27" selection-end-line="1745" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

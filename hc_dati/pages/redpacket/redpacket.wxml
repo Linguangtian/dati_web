@@ -1,0 +1,19 @@
+<view animation="{{animationData}}" class="qiyu {{to?'one':''}}">
+    <image class="cdshvf" src="../../resource/images/lojhh_02.png"></image>
+    <view class="{{to?'one':'two'}}">
+        <view class="quyfdi">
+            <image class="tisab" src="{{userInfo.avatarUrl}}"></image>
+            <text>{{userInfo.nickName}}</text>
+            <text>恭喜发财，大吉大利</text>
+        </view>
+        <view class="manrry">
+            <text>{{qiav.money}}</text>
+            <text>元</text>
+        </view>
+        <view bindtap="geren" class="yigjs">已存入钱包，可直接去个人中心提现</view>
+        <view class="gongsifn">
+      恭喜你获得{{qiav.money}}元现金红包
+      </view>
+    </view>
+</view>
+<image animation="{{animationDatatwo}}" class="casuhca" src="{{img}}"></image>

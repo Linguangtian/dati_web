@@ -1,0 +1,92 @@
+page {
+    background: #f1f0f5;
+}
+
+.section__title {
+    height: 76rpx;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 32rpx;
+    background: #f1f0f5;
+    color: #8a8a89;
+    font-size: 28rpx;
+    line-height: 76rpx;
+}
+
+.group {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 32rpx;
+    background: #fff;
+}
+
+.label-1,.label-2 {
+    height: 90rpx;
+    width: 100%;
+    display: flex;
+    border-bottom: 2rpx solid #dedede;
+    align-items: center;
+}
+
+.label-1__text,.label-2__text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.label-1__icon {
+    position: relative;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    background: #fcfff4;
+}
+
+.label-1__icon-checked {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    background: #1aad19;
+}
+
+.label-2__icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+}
+
+.label-2__icon-checked {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 38rpx;
+    height: 26rpx;
+    border-radius: 50%;
+}
+
+.label-4_text {
+    text-align: center;
+    margin-top: 15px;
+}
+
+label-2__text text {
+    font-size: 34rpx;
+    color: #121212;
+}
+
+.avgb {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 100rpx;
+}

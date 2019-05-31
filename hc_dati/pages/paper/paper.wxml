@@ -1,0 +1,72 @@
+<view class="pis">
+    <text class="daja">每天用心一次，终身记录一天。</text>
+    <view class="geren">
+        <image class="gerback" src="../../resource/images/5720018830681.png"></image>
+        <view class="shengji">
+            <image src="{{avatarUrl}}"></image>
+            <text>{{nickName}}</text>
+        </view>
+        <view class="jiebie">
+            <text>LV.{{level}}</text>
+            <view class="jindu">
+                <view class="qhu"></view>
+            </view>
+        </view>
+    </view>
+    <view bindtap="tiao" class="{{stactyu==0?'nfg':'kayiu'}}">
+        <image class="guanji" src="../../resource/images/hosa_03.png"></image>
+        <view class="avd">
+            <image class="yitian" src="../../resource/images/yitian.png"></image>
+            <text class="daaa">天天</text>
+        </view>
+        <view class="daky kdgf">
+            <text>天天打卡</text>
+            <text>每天助力一次</text>
+        </view>
+    </view>
+    <view bindtap="jiayi" class="kayiu">
+        <image class="liing" src="../../resource/images/56560d60732d8.png"></image>
+        <view class="avd">
+            <image class="yitian" src="../../resource/images/yitian.png"></image>
+            <text class="daaa">{{yi}}天</text>
+        </view>
+        <view class="daky">
+            <text>效率计时</text>
+            <text>{{clock}}</text>
+        </view>
+    </view>
+    <view class="qichua">
+        <view bindtap="jiayi" class="qichua_one" data-stactt="1">
+            <text class="qichuang">起床签到</text>
+            <image class="qidtru" src="../../resource/images/15f81e097d8f936a99318ef9d80ca51e.png"></image>
+            <view class="ding">
+                <view class="uiadc">
+                    <image src="../../resource/images/hong.png"></image>
+                    <text>{{qichuang}}天</text>
+                </view>
+            </view>
+        </view>
+        <view class="qichua_two">
+            <view bindtap="jiayi" class="qichua_twoo" data-stactt="2">
+                <text class="qiu_one">英语学习签到</text>
+                <image class="qiu_two" src="../../resource/images/2f0fb10d5eae7485a418bea727b72673.png"></image>
+                <view class="ding">
+                    <view class="uiadc">
+                        <image src="../../resource/images/hong.png"></image>
+                        <text>{{yingyu}}天</text>
+                    </view>
+                </view>
+            </view>
+            <view bindtap="jiayi" class="qichua_three" data-stactt="3">
+                <image class="run" src="../../resource/images/62fb5a24a87b93dae7ded5e983d6c2bd.png"></image>
+                <text class="yfsn">运动记录</text>
+                <view class="ding">
+                    <view class="uiadc">
+                        <image src="../../resource/images/hong.png"></image>
+                        <text>{{yundong}}天</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

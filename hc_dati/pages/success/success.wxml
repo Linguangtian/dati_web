@@ -1,0 +1,13 @@
+<view class="saadv">
+    <image class="syds" src="../../resource/images/56560d60732d8.png"></image>
+    <text class="sueds">支付成功 明早记得打卡哦</text>
+    <view class="daksj">
+        <text>打卡时间</text>
+        <text>明日 {{setup.startime}}点 ~ {{setup.endtime}}点</text>
+    </view>
+    <text bindtap="dianji" class="goos">好的</text>
+    <button class="goos_two" openType="share">
+        <image src="../../resource/images/wx1.png"></image>
+        <text>邀请新用户 瓜分次数 +1</text>
+    </button>
+</view>

@@ -1,0 +1,50 @@
+page {
+    background: #db5a3a;
+}
+
+.quanmina {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tiah {
+    width: 80%;
+    margin: 0 auto;
+    height: 120rpx;
+    background: #fff;
+    display: flex;
+    position: relative;
+    padding: 35rpx 40rpx;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 10rpx;
+    margin-bottom: 20rpx;
+    margin-top: 200rpx;
+}
+
+.fhsh {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    z-index: 0;
+}
+
+.tianhz {
+    color: #db5a3a;
+    font-size: 30rpx;
+    z-index: 1;
+}
+
+.ajvd {
+    width: 342rpx;
+    height: 280rpx;
+}
+
+.succes {
+    color: #fed566;
+    font-size: 30rpx;
+}

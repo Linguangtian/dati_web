@@ -1,0 +1,31 @@
+<view class="qiandao_one">
+    <view class="asjv">
+        <view class="sguaovd">
+            <image src="../../resource/images/shib.png"></image>
+            <text>挑战失败</text>
+            <text>挑战失败</text>
+        </view>
+        <button class="tiah" openType="share">
+            <image class="fhsh" src="../../resource/images/tzbj.png"></image>
+            <view class="tiah_one tiah_yua">
+                <text>分享群挑战机会+1</text>
+                <text>80%的挑战者1次获得1个娃娃</text>
+            </view>
+            <view class="tiah_two tiah_yua">
+                <text>免费</text>
+                <text>2元</text>
+            </view>
+        </button>
+        <view bindtap="pay" class="tiah" data-id="{{item.goods_id}}" wx:for="{{goumai}}">
+            <image class="fhsh" src="../../resource/images/tzbj.png"></image>
+            <view class="tiah_one">
+                <text>{{item.name}}</text>
+                <text>{{item.miaosu}}</text>
+            </view>
+            <view class="tiah_two">
+                <text>{{item.yuanjia}}元</text>
+                <text>{{item.xianjia}}元</text>
+            </view>
+        </view>
+    </view>
+</view>

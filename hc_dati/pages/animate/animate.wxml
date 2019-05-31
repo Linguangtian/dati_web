@@ -1,0 +1,7 @@
+<view class="cartion">
+    <image class="changp {{xaun?'rotate-img':''}}" src="../../resource/images/changp.png"></image>
+    <image animation="{{animationData}}" class="zj02" src="../../resource/images/zj02.png"></image>
+    <image class="music_bei" src="../../resource/images/music_bei.png"></image>
+</view>
+<button bindtap="zanting">暂停</button>
+<button bindtap="kai">开始</button>

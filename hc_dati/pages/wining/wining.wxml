@@ -1,0 +1,18 @@
+<view class="zongti">
+    <view class="zongti_one" wx:for="{{pxguize}}">
+        <image class="zongti_oneing" src="{{item.head_pic}}"></image>
+        <view class="zongti_two">
+            <text class="zong_ncheng">{{item.nick_name}}</text>
+            <view class="zongti_three">
+                <view class="qotda">
+                    <text>获得{{jiangxiang}}</text>
+                    <text>{{item.goods_name}}</text>
+                </view>
+                <view class="qitavs">
+                    <image class="xiangjf" src="{{item.goods_img}}"></image>
+                </view>
+                <text class="diyi">{{item.pxperiods}}</text>
+            </view>
+        </view>
+    </view>
+</view>

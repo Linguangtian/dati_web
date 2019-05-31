@@ -1,0 +1,120 @@
+page {
+    width: 100%;
+    height: 100%;
+}
+
+.shi_zhuti {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 6%;
+    position: relative;
+}
+
+.shi_yicxsh {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.shi_zhongbu {
+    width: 90%;
+    margin: 0 auto;
+    background: #fff4de;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff4de;
+    border-radius: 10rpx;
+    overflow: auto;
+}
+
+.shi_userInfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 70rpx;
+}
+
+.shi_userInfo image {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 100%;
+}
+
+.shi_userInfo text {
+    color: #ad4129;
+    font-size: 35rpx;
+    margin-top: 21rpx;
+}
+
+.shi_jijianghkau {
+    position: relative;
+    font-size: 35rpx;
+    color: #9b4b33;
+    margin-top: 70rpx;
+}
+
+.shi_jijianghkau::before {
+    content: "\200b";
+    width: 120rpx;
+    height: 4rpx;
+    position: absolute;
+    left: -150rpx;
+    top: 25rpx;
+    background: #bf523b;
+}
+
+.shi_jijianghkau::after {
+    content: "\200b";
+    width: 120rpx;
+    height: 4rpx;
+    position: absolute;
+    right: -150rpx;
+    top: 25rpx;
+    background: #bf523b;
+}
+
+.shi_ZJIZL {
+    font-size: 25rpx;
+    color: #dd5c49;
+    margin-bottom: 150rpx;
+}
+
+.shi_guode {
+    width: 280rpx;
+    height: 80rpx;
+    background: #db5a3a;
+    color: #fff;
+    font-size: 30rpx;
+    display: flex;
+    align-items: center;
+    border-radius: 10rpx;
+    margin-bottom: 20rpx;
+    justify-content: center;
+}
+
+.shi_gsac {
+    width: 280rpx;
+    height: 80rpx;
+    border: 2rpx solid #db5a3a;
+    color: #db5a3a;
+    font-size: 30rpx;
+    display: flex;
+    align-items: center;
+    border-radius: 10rpx;
+    margin-bottom: 20rpx;
+    justify-content: center;
+}
+
+.shi_gsali {
+    color: #635fac;
+    font-size: 30rpx;
+    margin-top: 243rpx;
+}

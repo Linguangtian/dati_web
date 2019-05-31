@@ -1,0 +1,217 @@
+page {
+    width: 100%;
+    height: 100%;
+    background: #ffe9c2;
+}
+
+.dop {
+    width: 100%;
+    position: relative;
+    height: 650rpx;
+}
+
+.dop_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-bottom-left-radius: 25rpx;
+    border-bottom-right-radius: 25rpx;
+    z-index: -1;
+}
+
+.clock {
+    width: 90%;
+    box-sizing: border-box;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.huah {
+    width: 48%;
+    height: 333rpx;
+    display: flex;
+    padding-top: 50rpx;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatarUrl {
+    width: 125rpx;
+    height: 125rpx;
+    border-radius: 100%;
+}
+
+.huah_one {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.huah_one text {
+    color: #ffdb93;
+    font-size: 26rpx;
+}
+
+.huah_one text:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 40px;
+    text-align: center;
+}
+
+.big {
+    font-size: 78rpx;
+    color: #ffdb93;
+}
+
+.qiyavc {
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.qiyavc_one {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30rpx;
+    justify-content: space-between;
+    height: 90rpx;
+}
+
+.qiyavc_one text {
+    color: #ffdb93;
+    font-size: 26rpx;
+}
+
+.qiyavc_one text:first-child {
+    font-size: 48rpx;
+}
+
+.havk {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 34rpx;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.asgvad {
+    width: 306rpx;
+    height: 65rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 50rpx;
+    background: #ffe3ae;
+    justify-content: center;
+    margin-top: 14rpx;
+}
+
+.asgvad image {
+    width: 50rpx;
+    margin-right: 20rpx;
+    height: 50rpx;
+}
+
+.asgvad text {
+    color: #d85a43;
+    font-size: 26rpx;
+}
+
+.dakdu {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.dakdu_one {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 36rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.dakdu_one image {
+    width: 40rpx;
+    margin-right: 20rpx;
+    height: 40rpx;
+}
+
+.dakdu_one text {
+    color: #333333;
+    font-size: 30rpx;
+}
+
+.avvbdf {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 36rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 107rpx;
+    border-bottom: 2rpx solid #ffaa00;
+    align-items: center;
+}
+
+.avvbdf text {
+    color: #ffaa00;
+    font-size: 30rpx;
+}
+
+.avvbdf .ycsab {
+    color: #888888;
+    font-size: 30rpx;
+}
+
+.tabber {
+    height: 100rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    background: #bea36b;
+    box-sizing: border-box;
+    padding: 12rpx 0;
+}
+
+.tabber_qi {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.white {
+    font-size: 25rpx;
+    color: #fff;
+}
+
+.tabber_img {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.huang {
+    font-size: 25rpx;
+    color: #dfd1ae;
+}

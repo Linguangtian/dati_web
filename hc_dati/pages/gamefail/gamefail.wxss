@@ -1,0 +1,139 @@
+page {
+    background: #db5a3a;
+}
+
+.sguaovd {
+    width: 100%;
+    height: 227rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 30rpx 0;
+}
+
+.sguaovd image {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.sguaovd text {
+    font-size: 30rpx;
+    color: #fcdb68;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    background: none;
+}
+
+button::after {
+    content: none;
+}
+
+.sguaovd text:first-child {
+    font-size: 40rpx;
+}
+
+.qiandao_one {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #db5a3a;
+    box-sizing: border-box;
+    padding: 20rpx;
+}
+
+.asjv {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    align-items: center;
+}
+
+.suc {
+    color: #fea531;
+    font-size: 40rpx;
+    margin: 50rpx 0 30rpx 0;
+}
+
+.tiah {
+    width: 95%;
+    margin: 0 auto;
+    height: 150rpx;
+    background: #fff;
+    display: flex;
+    position: relative;
+    padding: 35rpx 40rpx;
+    box-sizing: border-box;
+    justify-content: space-between;
+    border-radius: 10rpx;
+    margin-bottom: 20rpx;
+}
+
+.tiah_one {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 1;
+    text-align: left;
+}
+
+.tiah_two {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 1;
+    text-align: center;
+}
+
+.tiah_two text {
+    font-size: 26rpx;
+    color: #db5a3a;
+    text-decoration: line-through;
+}
+
+.tiah_two text:first-child {
+    font-size: 30rpx;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.tiah_one text {
+    font-size: 26rpx;
+    color: #db5a3a;
+}
+
+.tiah_one text:first-child {
+    font-size: 30rpx;
+    font-weight: 700;
+}
+
+.tiah_yua text {
+    font-size: 26rpx;
+    color: #db5a3a;
+    line-height: 20rpx;
+}
+
+.tiah_yua text:first-child {
+    font-size: 33rpx;
+    font-weight: 700;
+    line-height: 20rpx;
+    color: #fcdb68;
+}
+
+.fhsh {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    z-index: 0;
+}

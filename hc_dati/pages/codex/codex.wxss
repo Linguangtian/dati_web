@@ -1,0 +1,159 @@
+page {
+    background: #ffe9c2;
+}
+
+.xsacfas {
+    width: 81%;
+    margin-bottom: 100rpx;
+    background: #fff1da;
+    margin: 0 auto;
+    border-radius: 10rpx;
+    height: 70%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 26rpx;
+}
+
+.guanggai {
+    width: 100%;
+    height: 300rpx;
+    margin-top: 20rpx;
+}
+
+.xiangmuyi_one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40rpx;
+}
+
+.xiangmuyi_one text {
+    color: #333333;
+    font-size: 26rpx;
+}
+
+.xiangmuyi_one text:first-child {
+    width: 40rpx;
+    height: 40rpx;
+    display: flex;
+    margin-right: 15rpx;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: #cb543e;
+    font-size: 26rpx;
+    color: #fff;
+}
+
+.yudaghb {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20rpx 0 50rpx 50rpx;
+    color: #333333;
+    font-size: 26rpx;
+    display: inline-block;
+}
+
+.banc {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.qicgd {
+    position: fixed;
+    z-index: 11;
+    bottom: 0;
+    width: 100%;
+}
+
+.qicgda {
+    position: fixed;
+    bottom: 0px;
+    z-index: 11;
+    width: 100%;
+}
+
+.fenxiang_a {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.fenxiang_b {
+    width: 50%;
+    align-items: center;
+    height: 184rpx;
+    padding: 30rpx 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    justify-content: space-between;
+}
+
+.fenxiang_b image {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.fenxiang_b text {
+    font-size: 30rpx;
+    color: #353535;
+    line-height: 35rpx;
+}
+
+.quxia {
+    height: 70rpx;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 4rpx solid #efefef;
+    font-size: 30rpx;
+    background: #fff;
+}
+
+.buidv {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.buidv_ko {
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.buidv_ko .tuxiang {
+    width: 100%;
+    height: 600rpx;
+}
+
+.duabnb {
+    width: 50rpx;
+    height: 50rpx;
+    margin: 20rpx auto;
+    display: block;
+}
+
+.idagg {
+    width: 100%;
+    line-height: 68rpx;
+    margin: 0 auto;
+    margin-top: 20rpx;
+    border-radius: 50rpx;
+    background: #38ca20;
+    font-size: 28rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}

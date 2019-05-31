@@ -1,0 +1,27 @@
+<view class="xsacfas">
+    <view class="xiangmuyi">
+        <view class="xiangmuyi_one">
+            <text>1</text>
+            <text>活动规则</text>
+        </view>
+        <view class="yudaghb">
+        {{huodong}}
+      </view>
+    </view>
+    <view class="xiangmuyi">
+        <view class="xiangmuyi_one">
+            <text>2</text>
+            <text>参与方式</text>
+        </view>
+        <view class="yudaghb">
+        {{canyu}}
+      </view>
+    </view>
+    <view class="xiangmuyi">
+        <view class="xiangmuyi_one">
+            <text>3</text>
+            <text>特殊情况说明</text>
+        </view>
+        <text class="yudaghb">{{teshu}} </text>
+    </view>
+</view>

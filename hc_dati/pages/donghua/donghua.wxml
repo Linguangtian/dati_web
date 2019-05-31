@@ -1,0 +1,2 @@
+<image animation="{{animationData}}" bindtap="dao" class="fusa" src="../../resource/images/lojhh_02.png"></image>
+<text class="{{to?'xianshi':'yin'}}">字体</text>

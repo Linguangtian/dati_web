@@ -1,0 +1,354 @@
+page {
+    width: 100%;
+    height: 100%;
+    background: #db5943;
+}
+
+.pis {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 26rpx;
+    text-align: center;
+    padding-bottom: 30rpx;
+}
+
+.daja {
+    color: #fff;
+    font-size: 32rpx;
+    display: block;
+    text-align: center;
+    margin-top: 33rpx;
+    margin-bottom: 53rpx;
+}
+
+.kayiu {
+    width: 100%;
+    height: 400rpx;
+    border-radius: 5px;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 30rpx;
+}
+
+.qichua {
+    width: 100%;
+    height: 377rpx;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30rpx;
+}
+
+.qichua_one {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 11rpx;
+    display: felx;
+    flex-direction: column;
+    align-items: center;
+    background: #e0e0e0;
+    border-radius: 10rpx;
+    position: relative;
+}
+
+.ding {
+    position: absolute;
+    top: 10rpx;
+    right: 10rpx;
+}
+
+.uiadc {
+    width: 70rpx;
+    height: 70rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.uiadc image {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+}
+
+.uiadc text {
+    color: #ffffff;
+    font-size: 24rpx;
+    z-index: 1;
+}
+
+.qichua_one .qichuang {
+    font-size: 48rpx;
+    color: #574f60;
+}
+
+.qichua_one .qidtru {
+    width: 95%;
+    height: 284rpx;
+}
+
+.qichua_two {
+    width: 45%;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.qichua_twoo {
+    width: 100%;
+    height: 45%;
+    background: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10rpx;
+    position: relative;
+}
+
+.qichua_twoo .qiu_one {
+    color: #574e60;
+    font-size: 36rpx;
+    margin-right: auto;
+    margin-left: 20rpx;
+}
+
+.qichua_twoo .qiu_one {
+    color: #574e60;
+    font-size: 36rpx;
+    margin-right: auto;
+    margin-left: 20rpx;
+}
+
+.qichua_three {
+    width: 100%;
+    height: 45%;
+    background: #e0e0e0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10rpx;
+    position: relative;
+}
+
+.qichua_twoo .qiu_two {
+    width: 203rpx;
+    height: 110rpx;
+}
+
+.yfsn {
+    color: #574e60;
+    font-size: 36rpx;
+    width: 78rpx;
+}
+
+.shengji {
+    width: 100%;
+    height: 150rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.run {
+    width: 50%;
+    height: 100%;
+}
+
+.shengji image {
+    width: 100rpx;
+    height: 100rpx;
+    border: 8rpx solid #db5943;
+    border-radius: 100%;
+}
+
+.shengji text {
+    font-size: 28rpx;
+    color: #fff;
+}
+
+.nfg {
+    display: none;
+}
+
+.geren {
+    height: 270rpx;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 37rpx;
+    margin-bottom: 30rpx;
+    border-radius: 5px;
+}
+
+.guanji {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.jiebie {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 27rpx;
+    align-items: center;
+}
+
+.liing {
+    position: absolute;
+    left: 26%;
+    width: 77%;
+    height: 101%;
+    top: 8rpx;
+}
+
+.jiebie text {
+    font-size: 30rpx;
+    color: #fff;
+}
+
+.jiebie text {
+    font-size: 30rpx;
+    color: #db5943;
+    font-weight: 700;
+}
+
+.jiebie .jindu {
+    height: 20rpx;
+    width: 200rpx;
+    background: #db5943;
+    border-radius: 50rpx;
+    box-sizing: border-box;
+    margin-left: 10rpx;
+    padding: 2rpx;
+}
+
+.jiebie .qhu {
+    width: 50%;
+    height: 100%;
+    border-radius: 50rpx;
+    background: #fff;
+}
+
+.gerback {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.avd {
+    position: relative;
+    left: 88%;
+    width: 70rpx;
+    height: 105rpx;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.yitian {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    top: 0;
+    width: 70rpx;
+    height: 105rpx;
+}
+
+.daaa {
+    color: #fff;
+    font-size: 24rpx;
+    z-index: 1;
+    height: 105rpx;
+}
+
+.daaa {
+    color: #fff;
+    font-size: 24rpx;
+    z-index: 1;
+    line-height: 82rpx;
+}
+
+.daky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 23rpx;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 140rpx 0;
+}
+
+.daky text {
+    font-size: 24rpx;
+    color: #ffffff;
+}
+
+.daky text:first-child {
+    font-size: 48rpx;
+    color: #ffffff;
+    padding-bottom: 15rpx;
+    border-bottom: 2rpx solid #fff;
+}
+
+.kayiu .kdgf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 23rpx;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 30rpx 0 240rpx 0;
+}
+
+.kayiu .kdgf text:first-child {
+    border-bottom: 2rpx solid #fff;
+}
+
+.chuan {
+    width: 100%;
+    border: 2rpx dotted #fff;
+    height: 88rpx;
+    display: flex;
+    align-items: center;
+    margin: 30rpx 0;
+    border-radius: 23rpx;
+    justify-content: center;
+}
+
+.chuan image {
+    width: 50rpx;
+    height: 50rpx;
+    padding-right: 30rpx;
+}
+
+.chuan text {
+    font-size: 30rpx;
+    color: #fff;
+}

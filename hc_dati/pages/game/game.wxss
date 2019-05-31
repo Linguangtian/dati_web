@@ -1,0 +1,126 @@
+page {
+    background: #db5a3a;
+}
+
+.input {
+    width: 95%;
+    height: 545rpx;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fdf2de;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 13rpx;
+    position: relative;
+    margin-top: 20rpx;
+    overflow: auto;
+    justify-content: space-between;
+    border-radius: 12rpx;
+}
+
+.jianpana {
+    width: 100%;
+    font-family: "微软雅黑";
+    text-align: center;
+    font-size: 30rpx;
+    height: 68rpx;
+    line-height: 80rpx;
+    background: #fff;
+    color: #1e1e1e;
+    margin-bottom: 3rpx;
+}
+
+.yus,.yusa {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 13rpx;
+    width: 100%;
+    left: 0;
+    transition: all 1s;
+    padding-left: 18rpx;
+}
+
+.yusa text {
+    font-size: 35rpx;
+    background: rgba(0,0,0,0);
+    color: #fff;
+}
+
+.none {
+    display: none;
+}
+
+.kucaab {
+    width: 80rpx;
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fee7b1;
+    margin-bottom: 10rpx;
+    color: #fff;
+    margin-right: 5rpx;
+}
+
+.yuda {
+    width: 95%;
+    height: 50rpx;
+    background: #cb4e3a;
+    margin: 20rpx auto;
+    color: #ecce9a;
+    font-size: 30rpx;
+    border-radius: 10rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    text-align: center;
+}
+
+.lv {
+    width: 80rpx;
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1bd5a4;
+    font-size: 35rpx;
+    margin-right: 5rpx;
+    color: #fff;
+    margin-bottom: 10rpx;
+}
+
+.jianpan {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #ededed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.jianpan_one {
+    font-family: "微软雅黑";
+    width: 33%;
+    text-align: center;
+    font-size: 45rpx;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #1e1e1e;
+    margin-bottom: 3rpx;
+    margin-left: 3rpx;
+}
+
+.board_bg {
+    background: #e5e5e5;
+}

@@ -1,0 +1,675 @@
+page {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.zhuti {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 6%;
+    position: relative;
+}
+
+.yicxsh {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.zhuti {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.zhongbu {
+    width: 90%;
+    margin: 0 auto;
+    height: 93%;
+    background: #fff4de;
+    border-radius: 10rpx;
+    overflow: auto;
+}
+
+.changp_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    left: 0;
+}
+
+.yudfgha {
+    width: 90%;
+    height: 25%;
+    border-radius: 20rpx;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20rpx;
+}
+
+.yudfghamusic {
+    width: 90%;
+    height: 250rpx;
+    border-radius: 20rpx;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20rpx;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    background: none;
+    overflow: visible;
+    line-height: normal;
+}
+
+button::after {
+    content: none;
+}
+
+.start {
+    width: 100%;
+    height: 63%;
+    box-sizing: border-box;
+    padding-top: 90rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userInfo {
+    width: 100%;
+    height: 150rpx;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.userInfo image {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 100%;
+}
+
+.userInfo text {
+    color: #ad4129;
+    font-size: 30rpx;
+}
+
+.jijianghkau {
+    position: relative;
+    font-size: 30rpx;
+    color: #fcc501;
+}
+
+.jijianghkau::before {
+    content: "\200b";
+    width: 100rpx;
+    height: 3rpx;
+    position: absolute;
+    left: -130rpx;
+    top: 20rpx;
+    background: #ad4129;
+}
+
+.jijianghkau::after {
+    content: "\200b";
+    width: 100rpx;
+    height: 3rpx;
+    position: absolute;
+    right: -130rpx;
+    top: 20rpx;
+    background: #ad4129;
+}
+
+.shuzi {
+    font-size: 180rpx;
+    color: #ad4129;
+}
+
+.begin {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20rpx 30rpx;
+    position: relative;
+    height: 100%;
+}
+
+.begin_two {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vsdn {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 100%;
+}
+
+.geren_one {
+    font-size: 30rpx;
+    color: #ad4129;
+}
+
+.gezrej {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.yi {
+    font-size: 28rpx;
+    color: #6d655a;
+}
+
+.yili {
+    font-size: 28rpx;
+    color: #db5a3a;
+}
+
+.quanquna {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 100%;
+    border: 2rpx solid #f7c500;
+    background: #f6dba6;
+    text-align: center;
+    line-height: 100rpx;
+}
+
+.geren {
+    margin-right: auto;
+    margin-left: 30rpx;
+}
+
+.diyisah {
+    width: 100%;
+    text-align: center;
+    font-size: 35rpx;
+    color: #000;
+    display: block;
+    margin-top: 60rpx;
+}
+
+.timu {
+    width: 100%;
+    font-size: 35rpx;
+    color: #cb543e;
+    display: block;
+    text-align: center;
+    margin-top: 25rpx;
+    margin-bottom: 30rpx;
+}
+
+.timutwo {
+    width: 100%;
+    font-size: 35rpx;
+    color: #cb543e;
+    display: block;
+    text-align: center;
+    margin: 27% 0;
+}
+
+.qitaid {
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    left: 5%;
+    bottom: 2%;
+}
+
+.qitaid text {
+    width: 100%;
+    display: flex;
+    height: 85rpx;
+    justify-content: center;
+    align-items: center;
+    font-size: 30rpx;
+    color: #726751;
+    background: #f6dba6;
+    border-radius: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+.qitaid .lv {
+    width: 100%;
+    display: flex;
+    height: 85rpx;
+    justify-content: center;
+    align-items: center;
+    font-size: 30rpx;
+    color: #fff;
+    position: relative;
+    background: #4ed0a0;
+    border-radius: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+.qitaid .lv::before {
+    content: "\200b";
+    width: 30rpx;
+    height: 30rpx;
+    background: url('https://we10.66bbn.com/addons/hc_dati/dui.png') no-repeat;
+    position: absolute;
+    top: 35rpx;
+    left: 35rpx;
+    background-size: 100%;
+}
+
+.qitaid .hei {
+    width: 100%;
+    display: flex;
+    height: 85rpx;
+    justify-content: center;
+    align-items: center;
+    font-size: 30rpx;
+    color: #fff;
+    background: #ff5454;
+    border-radius: 20rpx;
+    position: relative;
+    margin-bottom: 20rpx;
+}
+
+.qitaid .hei::before {
+    content: "\200b";
+    width: 30rpx;
+    height: 30rpx;
+    background: url('https://we10.66bbn.com/addons/hc_dati/cuo.png') no-repeat;
+    position: absolute;
+    top: 35rpx;
+    left: 35rpx;
+    background-size: 100%;
+}
+
+.fail {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.fail_one {
+    width: 80%;
+    height: 55%;
+    position: relative;
+    left: 10%;
+    top: 29%;
+    background: #edeae7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 18rpx;
+    box-sizing: border-box;
+    padding: 79rpx 0;
+    padding-bottom: 0;
+}
+
+.cashvsd {
+    margin-top: 60rpx;
+}
+
+.quyd {
+    width: 261rpx;
+    height: 261rpx;
+    border-radius: 100%;
+}
+
+.zhuanfa {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 28rpx;
+    color: #656565;
+}
+
+.qita {
+    width: 500rpx;
+    height: 90rpx;
+    margin: 0 auto;
+    margin-bottom: 18rpx;
+}
+
+.qita image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.qitaa {
+    width: 428rpx;
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2rpx solid #db5a3a;
+}
+
+.qita text {
+    font-size: 28rpx;
+    color: #fff;
+}
+
+.qitaa text {
+    font-size: 28rpx;
+    color: #db5a3a;
+}
+
+.xsaoc {
+    position: absolute;
+    top: 50rpx;
+    display: flex;
+    left: 170rpx;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -173rpx;
+    align-items: center;
+}
+
+.shangxia {
+    width: 100%;
+    padding-top: 28rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 150rpx;
+    border-top: #b5b5b5 dashed 2rpx;
+}
+
+.bitozas {
+    color: #666666;
+    font-size: 36rpx;
+}
+
+.day {
+    font-size: 30rpx;
+    margin-top: 25rpx;
+    color: #1ca9f2;
+}
+
+.cxsahg {
+    width: 37rpx;
+    height: 37rpx;
+    position: absolute;
+    top: 20rpx;
+    right: 20rpx;
+}
+
+.cxsahga {
+    width: 100%;
+    height: 100%;
+}
+
+.none {
+    display: none;
+}
+
+.quling {
+    width: 428rpx;
+    height: 85rpx;
+    background: #db5a3a;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 5rpx;
+    font-size: 28rpx;
+    margin-top: 66rpx;
+    justify-content: center;
+}
+
+.qulingxsaca {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1ca9f2;
+    font-size: 50rpx;
+    color: #fff;
+}
+
+.more_sufn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20rpx;
+}
+
+.more_sufn image {
+    width: 100%;
+    height: 300rpx;
+}
+
+.more_gongis {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    background: #fff1da;
+    padding-left: 20rpx;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10rpx;
+}
+
+.more_gongis text {
+    color: #333333;
+    font-size: 30rpx;
+}
+
+.more_gongis .more_yuas {
+    padding: 0 25rpx;
+    border-radius: 50rpx;
+    color: #666666;
+    font-size: 24rpx;
+}
+
+.digasop {
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #666666;
+    font-size: 24rpx;
+    word-wrap: break-word;
+}
+
+.more_gongis .digasop text {
+    color: #333333;
+    font-size: 24rpx;
+    height: 60rpx;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.cartion {
+    width: 100%;
+    height: 200rpx;
+    margin-top: 30rpx;
+    position: relative;
+    margin-bottom: 106rpx;
+}
+
+.music_bei {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+
+.changp {
+    width: 250rpx;
+    height: 250rpx;
+    position: absolute;
+    top: 20rpx;
+    left: 30%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.changp_twoimg {
+    width: 100rpx;
+    height: 100rpx;
+    position: absolute;
+    top: 31%;
+    left: 30%;
+    z-index: 4;
+}
+
+.rotate-img {
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    form {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.zj02 {
+    width: 150rpx;
+    height: 258rpx;
+    position: absolute;
+    right: 12%;
+    z-index: 2;
+    top: 0;
+}
+
+.hogbaid {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.dianhu {
+    width: 80%;
+    height: 70%;
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+
+.tcbna {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.gujgan {
+    width: 48rpx;
+    height: 48rpx;
+    display: block;
+    position: absolute;
+    top: 36rpx;
+    left: 36rpx;
+}
+
+.answer {
+    position: fixed;
+    width: 90%;
+    left: 5%;
+    top: 15%;
+    height: 79%;
+    background: #fff4de;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.qiyufaimg {
+    width: 408rpx;
+    height: 258rpx;
+    display: block;
+}
+
+.shi_jijianghkau {
+    position: relative;
+    font-size: 35rpx;
+    color: #9b4b33;
+    margin-top: 40rpx;
+    margin-bottom: 43rpx;
+}
+
+.shi_jijianghkau::before {
+    content: "\200b";
+    width: 120rpx;
+    height: 4rpx;
+    position: absolute;
+    left: -150rpx;
+    top: 25rpx;
+    background: #bf523b;
+}
+
+.shi_jijianghkau::after {
+    content: "\200b";
+    width: 120rpx;
+    height: 4rpx;
+    position: absolute;
+    right: -150rpx;
+    top: 25rpx;
+    background: #bf523b;
+}
+
+.wenju {
+    font-size: 30rpx;
+    color: #9b4b33;
+    margin-bottom: 30rpx;
+}
+
+.ligs {
+    width: 300rpx;
+    height: 85rpx;
+    border: 2rpx solid #bf523b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bf523b;
+    font-size: 30rpx;
+    border-radius: 10rpx;
+    margin-top: 25rpx;
+}
+
+.asvavcasd {
+    width: 300rpx;
+    height: 85rpx;
+    background: #bf523b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30rpx;
+    border-radius: 10rpx;
+    margin-top: 25rpx;
+    color: #fff;
+}

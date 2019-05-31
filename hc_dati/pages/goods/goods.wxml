@@ -1,0 +1,14 @@
+<import src="../../../wxParse/wxParse.wxml"></import>
+<view wx:if="{{jiangpin_status==0}}">
+    <scroll-view scrollY style="height:100%;padding-bottom:115rpx;box-sizing:border-box;">
+        <image class="goods_img" src="{{goods.thumb}}"></image>
+        <view class="goods">
+            <text class="goods_ming">{{goods.name}}</text>
+            <template is="wxParse" data="{{wxParseData:article.nodes}}"></template>
+        </view>
+    </scroll-view>
+    <view class="dibu">
+        <text bindtap="tiao">去挑战</text>
+        <text bindtap="Challenge">免费领取</text>
+    </view>
+</view>
