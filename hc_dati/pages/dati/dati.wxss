@@ -266,12 +266,26 @@ button::after {
     content: "\200b";
     width: 30rpx;
     height: 30rpx;
-    background: url('https://we10.66bbn.com/addons/hc_dati/dui.png') no-repeat;
+    background: url('https://www.ydproject.tech/addons/hc_dati/dui.png') no-repeat;
     position: absolute;
     top: 35rpx;
     left: 35rpx;
     background-size: 100%;
 }
+
+
+.qitaid .hong::before {
+    content: "\200b";
+    width: 30rpx;
+    height: 30rpx;
+    background: url('https://www.ydproject.tech/addons/hc_dati/dui.png') no-repeat;
+    position: absolute;
+    top: 35rpx;
+    left: 35rpx;
+    background-size: 100%;
+}
+
+
 
 .qitaid .hei {
     width: 100%;
@@ -291,7 +305,7 @@ button::after {
     content: "\200b";
     width: 30rpx;
     height: 30rpx;
-    background: url('https://we10.66bbn.com/addons/hc_dati/cuo.png') no-repeat;
+    background: url('https://www.ydproject.tech/addons/hc_dati/cuo.png') no-repeat;
     position: absolute;
     top: 35rpx;
     left: 35rpx;
@@ -379,7 +393,7 @@ button::after {
     position: absolute;
     top: 50rpx;
     display: flex;
-    left: 170rpx;
+
     flex-direction: column;
     justify-content: center;
     margin-top: -173rpx;

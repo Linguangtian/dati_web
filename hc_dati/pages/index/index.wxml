@@ -119,7 +119,7 @@
         <view class="dakdu">
             <view class="qic">
                 <text class="gdzltz">更多智力挑战</text>
-               <!-- <text bindtap="tousu" class="tousu">投诉</text>-->
+                <!-- <text bindtap="tousu" class="tousu">投诉</text>-->
             </view>
             <view class="jifentuijia">
                 <view class="yishif bovvfs">
@@ -334,9 +334,9 @@
                             </view>
                         </view>
                     </view>
-                   <!-- <view bindtap="gaotwo" class="{{ycsavua?'none':'pauihnag'}}" style="background:{{pxbpx_bkg}};">
-                        <text class="jiazaigengduo">加载更多</text>
-                    </view>-->
+                    <!-- <view bindtap="gaotwo" class="{{ycsavua?'none':'pauihnag'}}" style="background:{{pxbpx_bkg}};">
+                         <text class="jiazaigengduo">加载更多</text>
+                     </view>-->
                 </view>
                 <view class="ranking">
                     <text class="pai">毅力排行榜</text>
@@ -365,9 +365,9 @@
                             </view>
                         </view>
                     </view>
-                   <!-- <view bindtap="gao" class="{{ycsavu?'none':'pauihnag'}}" style="background:{{pxbpx_bkg}};">
-                        <text class="jiazaigengduo">加载更多</text>
-                    </view>-->
+                    <!-- <view bindtap="gao" class="{{ycsavu?'none':'pauihnag'}}" style="background:{{pxbpx_bkg}};">
+                         <text class="jiazaigengduo">加载更多</text>
+                     </view>-->
                 </view>
                 <image bindtap="tiao" class="guanggai" src="{{tupian}}" wx:if="{{tupian}}"></image>
             </view>
@@ -458,8 +458,8 @@
     <view hidden="{{boss==0?'':true}}">
         <view bindtap="actionSheetTap" class="title">
             <text class="pull-left"> {{'<<'}}</text>
-    {{dad}}
-  <text class="pull-right"> {{'>>'}}</text>
+            {{dad}}
+            <text class="pull-right"> {{'>>'}}</text>
         </view>
         <view class="time">
             <view class="big-circle blue first">
@@ -491,7 +491,7 @@
     <view>
         <view class="container" hidden="{{boss==1?'':true}}">
             <view class="section-title">
-      立论阶段 <switch checked bindchange="switchChange" class="pull-right" id="config1"></switch>
+                立论阶段 <switch checked bindchange="switchChange" class="pull-right" id="config1"></switch>
             </view>
             <view class="hr"></view>
             <view class="section section_gap">
@@ -512,7 +512,7 @@
                 </radio-group>
             </view>
             <view class="section-title">
-      驳立论阶段 <switch checked bindchange="switchChange" class="pull-right" id="config2"></switch>
+                驳立论阶段 <switch checked bindchange="switchChange" class="pull-right" id="config2"></switch>
             </view>
             <view class="hr"></view>
             <view class="section section_gap">
@@ -533,7 +533,7 @@
                 </radio-group>
             </view>
             <view class="section-title">
-      质辩环节 <switch checked bindchange="switchChange" class="pull-right" id="config3"></switch>
+                质辩环节 <switch checked bindchange="switchChange" class="pull-right" id="config3"></switch>
             </view>
             <view class="hr"></view>
             <view class="section section_gap">
@@ -554,7 +554,7 @@
                 </radio-group>
             </view>
             <view class="section-title">
-      自由辩论 <switch checked bindchange="switchChange" class="pull-right" id="config4"></switch>
+                自由辩论 <switch checked bindchange="switchChange" class="pull-right" id="config4"></switch>
             </view>
             <view class="hr"></view>
             <view class="section section_gap">
@@ -575,7 +575,7 @@
                 </radio-group>
             </view>
             <view class="section-title">
-      总结陈词 <switch checked bindchange="switchChange" class="pull-right" id="config5"></switch>
+                总结陈词 <switch checked bindchange="switchChange" class="pull-right" id="config5"></switch>
             </view>
             <view class="hr"></view>
             <view class="section section_gap">

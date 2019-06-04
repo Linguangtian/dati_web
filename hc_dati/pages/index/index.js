@@ -215,7 +215,7 @@ Page((_defineProperty(_Page = {
         });
     },
     tanchua_guan: function() {
-        console.log(111);
+
         var a = this.data.tanch;
         this.setData({
             tanch: !a

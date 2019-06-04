@@ -16,7 +16,8 @@
                     <text class="geren_one">{{userInfo.nickName}}</text>
                     <view class="gezrej">
                         <text class="yi">已连续答对</text>
-                        <text class="yili">{{shuli}}</text>
+                      <!--  <text class="yili">{{shuli}}</text>-->
+                        <text class="yili">{{successNum}}</text>
                         <text class="yi">/{{shuzitwo}}题</text>
                     </view>
                 </view>
@@ -61,7 +62,7 @@
     <view class="fail_one">
         <view class="xsaoc">
             <image class="quyd" src="../../resource/images/xiao.png"></image>
-            <text class="day">恭喜你答对了</text>
+            <text class="day">恭喜完成答题（时长：{{cost_time}}秒，正确率：{{accuracy_rate}}%)</text>
         </view>
         <view class="shangxia">
             <button bindtap="qu" class="qita" style="margin-top:108rpx;">

@@ -7,20 +7,24 @@ function _defineProperty(a, t, i) {
     }) : a[t] = i, a;
 }
 
-var timera, app = getApp(), canRun = !0;
+var timera, app = getApp(), canRun = !0, tishiyin = !0;
 
 Page({
     data: {
         time: 3,
         shouye: 0,
         bianhua: 0,
+        begin_time: 0,
         tr: 5,
         shi: !0,
         cheng: !0,
         index: "",
         shuli: 0,
+        successNum: 0,
+        cost_time: 0,
         shifou: 1,
         tifhu: 1,
+        accuracy_rate: 1,
         xaun: !1,
         jiangpina: "",
         award: ""
@@ -49,6 +53,12 @@ Page({
             jiangpina: i,
             zhuanfaqun: o
         });
+        t =  new Date();
+        var begin_time=t.getTime();
+        this.setData({
+            begin_time: begin_time
+        }),
+
         u.data.wcf;
         wx.getUserInfo({
             success: function(a) {
@@ -212,6 +222,7 @@ Page({
         });
     },
     dianii: function(a) {
+        //选择答案后
         if (canRun) {
             wx.getNetworkType({
                 success: function(a) {
@@ -224,78 +235,115 @@ Page({
             s.setData({
                 index: t
             });
+
             var i = s.data.daan;
+             var e, n = "topic[" + i + "].classname", o = s.data.shuli + 1;
+            var  n1 = "topic[" + t + "].classname";
+            var  sn = s.data.successNum;
             if (t == i) {
-                var e, n = "topic[" + i + "].classname", o = s.data.shuli + 1;
-                if (o == s.data.shuzitwo) {
-                    clearTimeout(timera);
-                    this.data.shifou;
-                    app.globalData.shouye = null;
-                    var s, u = (s = this).data.tifhu;
-                    s.setData({
-                        tifhu: u
-                    }), app.util.request({
-                        url: "entry/wxapp/jiesu",
-                        method: "POST",
-                        data: {
-                            numbera: s.data.shuzitwo,
-                            status: 1,
-                            cid: s.data.cid
-                        },
-                        success: function(a) {
+              var  sn = sn + 1;
+                s.setData({
+                    successNum: sn
+                })
+            }
+
+
+            if (t == i) {
+
+                if(tishiyin){
+                    tishiyin=!1;
+                    var tishi_yin=s.data.dui_mp3;
+                }else{
+                    tishiyin=!0;
+                    var tishi_yin=s.data.dui_mp31;
+                }
+                s.setData((_defineProperty(e = {}, n, "lv"), _defineProperty(e, "index", ""), _defineProperty(e, "shuli", o),
+                    e)), wx.showToast({
+                    title: "恭喜答对",
+                    icon: "success",
+                    image: "../../resource/images/20180206172516.png",
+                    duration: 500,
+                    mask: !1
+                }), s.playAudio(tishi_yin), s.timeclear();
+            }else{
+                //解决安卓两次同样的无法播放问题
+                if(tishiyin){
+                    tishiyin=!1;
+                    var tishi_yin=s.data.cuo_mp3;
+                }else{
+                    tishiyin=!0;
+                    var tishi_yin=s.data.cuo_mp31;
+                }
+
+                s.setData((_defineProperty(e = {}, n1, "hei"), _defineProperty(e, "index", ""), _defineProperty(e, "shuli", o),
+                    e)),
+                    setTimeout(function () {
+                        s.setData((_defineProperty(e = {}, n, "lv"), e))
+                    }, 100),
+                    wx.showToast({
+                        title: "您答错了！",
+                        icon: "success",
+                        image: "../../resource/images/error.png",
+                        duration: 800,
+                        mask: !1
+                    }), s.playAudio(tishi_yin), s.timeclear();
+
+            }
+
+
+
+            //全部答题结束
+            if (o == s.data.shuzitwo) {
+                t =  new Date();
+                var end_time=t.getTime();
+                clearTimeout(timera);
+                this.data.shifou;
+                app.globalData.shouye = null;
+                var s, u = (s = this).data.tifhu;
+                var accuracy_rate=(sn/s.data.shuzitwo).toFixed(3);
+                accuracy_rate= accuracy_rate.substring(0,accuracy_rate.lastIndexOf('.')+3);
+                accuracy_rate=accuracy_rate*100;
+                var cost_time=  parseInt((end_time- s.data.begin_time)/1000);
+                s.setData({
+                    tifhu: u,
+                    cost_time:cost_time,
+                    accuracy_rate:accuracy_rate,
+
+                }), app.util.request({
+                    url: "entry/wxapp/jiesu",
+                    method: "POST",
+                    data: {
+                        numbera: s.data.shuzitwo,
+                        status: 1,
+                        accuracy_rate: accuracy_rate,
+                        cost_time: cost_time,
+                        successNum: sn,
+                        cid: s.data.cid
+                    },
+                    success: function(a) {
+                        setTimeout(function () {
                             console.log("打印jiesu接口"), console.log(a);
                             var t = a.data.data, i = s.data.cheng;
                             s.setData({
                                 award: t,
                                 cheng: !i
                             }), app.globalData.award = a.data.data;
-                        }
-                    });
-                } else {
+                        }, 1000)
+                    }
+                });
+            } else {
+                setTimeout(function () {
                     u = s.data.tifhu + 1;
                     s.setData({
                         tifhu: u
                     }), s.dati();
-                }
-                s.setData((_defineProperty(e = {}, n, "lv"), _defineProperty(e, "index", ""), _defineProperty(e, "shuli", o), 
-                e)), wx.showToast({
-                    title: "恭喜答对",
-                    icon: "success",
-                    image: "../../resource/images/20180206172516.png",
-                    duration: 500,
-                    mask: !1
-                }), s.playAudio(s.data.dui_mp3), s.timeclear();
-            } else {
-                var d;
-                clearTimeout(timera), s.playAudio(s.data.cuo_mp3);
-                var c = "topic[" + i + "].classname", r = "topic[" + t + "].classname";
-                s.setData((_defineProperty(d = {}, c, "lv"), _defineProperty(d, r, "hei"), _defineProperty(d, "prompt", "答错了哦~"), 
-                d));
-                var l = s.data.shi;
-                setTimeout(function() {
-                    s.setData({
-                        shi: !l
-                    });
-                }, 200), app.util.request({
-                    url: "entry/wxapp/jiesu",
-                    method: "POST",
-                    data: {
-                        numbera: s.data.shuli,
-                        status: 0,
-                        cid: s.data.cid
-                    },
-                    success: function(a) {
-                        console.log("打印jiesu接口"), console.log(a);
-                        var t = a.data.data;
-                        s.setData({
-                            award: t
-                        }), app.globalData.award = a.data.data;
-                    }
-                });
+                }, 1000)
+
             }
+
             canRun = !1, setTimeout(function() {
                 canRun = !0;
-            }, 300);
+            }, 1100);
         }
     },
     qu: function() {
@@ -364,6 +412,7 @@ Page({
         }), wx.stopBackgroundAudio();
     },
     playAudio: function(i) {
+
         wx.getSystemInfo({
             success: function(a) {
                 if (0 <= a.system.indexOf("iOS")) wx.playBackgroundAudio({
@@ -424,12 +473,14 @@ Page({
                 user_id: app.globalData.user_id
             },
             success: function(a) {
-                var t = a.data.data, i = t.kaishi_mp3, e = t.dui_mp3, n = t.cuo_mp3, o = t.fuhuo_money, s = t.fh_zhifu_status, u = t.fh_zhifu_img, d = t.fh_zhuanfa_img, c = t.fuhuo_text;
+                var t = a.data.data, i = t.kaishi_mp3, e = t.dui_mp3,e1=t.dui_mp31,n1 = t.cuo_mp31, n = t.cuo_mp3, o = t.fuhuo_money, s = t.fh_zhifu_status, u = t.fh_zhifu_img, d = t.fh_zhuanfa_img, c = t.fuhuo_text;
                 r.setData({
                     award: t,
                     kaishi_mp3: i,
                     dui_mp3: e,
+                    dui_mp31: e1,
                     cuo_mp3: n,
+                    cuo_mp31: n1,
                     fuhuo_money: o,
                     fh_zhifu_status: s,
                     fh_zhifu_img: u,
