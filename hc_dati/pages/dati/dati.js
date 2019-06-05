@@ -291,7 +291,6 @@ Page({
             }
 
 
-
             //全部答题结束
             if (o == s.data.shuzitwo) {
                 t =  new Date();
@@ -328,17 +327,14 @@ Page({
                                 award: t,
                                 cheng: !i
                             }), app.globalData.award = a.data.data;
-                        }, 1000)
+                        }, 800)
                     }
                 });
             } else {
-                setTimeout(function () {
-                    u = s.data.tifhu + 1;
+               var     u = s.data.tifhu + 1;
                     s.setData({
                         tifhu: u
                     }), s.dati();
-                }, 1000)
-
             }
 
             canRun = !1, setTimeout(function() {

@@ -35,7 +35,7 @@
             </view>
             <text class="{{twy==2||twy==1?'timu':'timutwo'}}">{{tifhu}}、{{timu}}？</text>
             <view class="qitaid">
-                <text bindtap="dianii" class="wu {{item.classname}}" data-index="{{index}}" wx:if="{{shuli!=shuzitwo}}" wx:for="{{topic}}">{{item.value}}</text>
+                <text bindtap="dianii" class="wu {{item.classname}}" data-index="{{index}}"  wx:for="{{topic}}">{{item.value}}</text>
             </view>
         </view>
     </view>

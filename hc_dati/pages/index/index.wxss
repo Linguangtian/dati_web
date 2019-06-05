@@ -1735,7 +1735,7 @@ button::after {
 }
 
 .tabber {
-    height: 115rpx;
+    height: 108rpx;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -1745,7 +1745,7 @@ button::after {
     background: #eb4e49;
     box-sizing: border-box;
     z-index: 0;
-    padding: 0rpx 0 15rpx 0;
+    padding: 5rpx 0 10rpx 0;
     box-shadow: 2rpx 2px 4px 0 #000;
 }
 
@@ -1756,15 +1756,19 @@ button::after {
     flex-direction: column;
     justify-content: space-between;
 }
+.tabber_img {
+    width: 70rpx;
+    height: 70rpx;
+}
 
 .white {
-    font-size: 25rpx;
-    color: #5DDEFA;
+    font-size: 35rpx;
+    color: #1ABAFF;
     font-family: "宋体";
+    font-weight:bold;
     position: relative;
     z-index: 1;
-    width: 100rpx;
-    height: 25rpx;
+    height: 35rpx;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1774,7 +1778,7 @@ button::after {
     width: 85%;
     height: 138rpx;
     position: absolute;
-    bottom: -545rpx;
+    bottom: -614rpx;
     left: 7.5%;
     border-radius: 20rpx;
 }
@@ -1913,10 +1917,6 @@ button::after {
     background: #fff;
 }
 
-.tabber_img {
-    width: 70rpx;
-    height: 70rpx;
-}
 
 .none {
     background: none;
@@ -1931,7 +1931,7 @@ button::after {
 .huang::before {
     content: "";
     width: 100rpx;
-    height: 35rpx;
+    height: 25rpx;
     background: #000;
     position: absolute;
     top: 0;

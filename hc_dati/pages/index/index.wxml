@@ -415,40 +415,40 @@
             </view>
         </view>
     </scroll-view>
-    <view class="tabber" style=" background:{{dibu_color}};">
-        <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true">
-            <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
+    <view class="tabber" style=" background:{{dibu_color}}; margin: auto;" >
+        <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true" style="border-right: 1px solid  #1ABAFF;">
+            <button formType="submit" hoverClass="none" style="padding-top:15rpx;position:none;display:inline-block;width:100%;height:100%;">
                 <view bindtap="index" data-indexof="1">
-                    <image class="tabber_img" hidden="{{indexof==1?'':true}}" src="{{shouye_img}}"></image>
-                    <image class="tabber_img" hidden="{{indexof!=1?'':true}}" src="{{shouye_img}}"></image>
-                    <text class="{{indexof==1?'white':'white'}}" wx:if="{{shouyename}}">{{shouyename}}</text>
+                    <image class="tabber_img" hidden="{{indexof==1?'':true}}" src="{{shouye_img}}" ></image>
+                    <text style="float: right;margin-top:20rpx;margin-left: 5rpx;" class="{{indexof==1?'white':'white'}}" wx:if="{{shouyename}}">{{shouyename}}</text>
                 </view>
+
             </button>
         </form>
-        <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true">
-            <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
+        <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true" wx:if="{{paihangbangname}}">
+            <button formType="submit" hoverClass="none" style="padding-top:15rpx;position:none;display:inline-block;width:100%;height:100%;">
                 <view bindtap="savsd" data-indexof="4">
                     <image class="tabber_img" hidden="{{indexof==4?'':true}}" src="{{paihangbang_img}}"></image>
                     <image class="tabber_img" hidden="{{indexof!=4?'':true}}" src="{{paihangbang_img}}"></image>
-                    <text class="{{indexof==2?'white':'white'}}" wx:if="{{paihangbangname}}">{{paihangbangname}}</text>
                 </view>
+                <text style="float: right;margin-top:20rpx;margin-left: 5rpx;" class="{{indexof==2?'white':'white'}}" >{{paihangbangname}}</text>
             </button>
         </form>
         <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true" wx:if="{{fenlei==1}}">
-            <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
+            <button formType="submit" hoverClass="none" style=" padding-top:15rpx; position:none;display:inline-block;width:100%;height:100%;">
                 <view bindtap="savsdtwo" data-indexof="2">
                     <image class="tabber_img" hidden="{{indexof==2?'':true}}" src="{{fenlei_img}}"></image>
                     <image class="tabber_img" hidden="{{indexof!=2?'':true}}" src="{{fenlei_img}}"></image>
-                    <text class="{{indexof==2?'white':'white'}}" wx:if="{{fenleiname}}">{{fenleiname}}</text>
+                    <text  style="float: right;margin-top:20rpx;margin-left: 5rpx;" class="{{indexof==2?'white':'white'}}" wx:if="{{fenleiname}}">{{fenleiname}}</text>
                 </view>
             </button>
         </form>
         <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true">
-            <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
+            <button formType="submit" hoverClass="none" style="padding-top:15rpx; position:none;display:inline-block;width:100%;height:100%;">
                 <view bindtap="guafen" data-indexof="3">
                     <image class="tabber_img" hidden="{{indexof==3?'':true}}" src="{{wode_img}}"></image>
                     <image class="tabber_img" hidden="{{indexof!=3?'':true}}" src="{{wode_img}}"></image>
-                    <text class="{{indexof==3?'white':'white'}}" wx:if="{{wodename}}">{{wodename}}</text>
+                    <text style="float: right;margin-top:20rpx;margin-left: 5rpx;" class="{{indexof==3?'white':'white'}}" wx:if="{{wodename}}">{{wodename}}</text>
                 </view>
             </button>
         </form>
