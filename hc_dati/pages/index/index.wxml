@@ -1,7 +1,7 @@
 <import src="../../../wxParse/wxParse.wxml"></import>
 <view class="total" hidden="{{stake==0?'':true}}">
     <image class="total_img" src="{{bg_color}}"></image>
-    <scroll-view class="{{chao?'bcshad':'overui'}}" data-indexof="1" hidden="{{indexof==1?'':true}}" scrollY="true" style="height:86%;">
+    <scroll-view class="{{chao?'bcshad':'overui'}}" data-indexof="1" hidden="{{indexof==1?'':true}}" scrollY="true" style="height:100%;">
         <view class="datigna">
             <image class="bigback" src="{{daoh}}"></image>
             <form bindsubmit="submitInfo" reportSubmit="true">
@@ -217,40 +217,47 @@
             <view bindtap="zailai" class="shi_gsac">再来一次</view>
             <button bindtap="kefu" class="shi_gsali" openType="contact">联系客服</button>
         </view>
-        <view class="tabber tabbertwo" style="background:{{dibu_color}};">
-            <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true">
-                <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
-                    <view bindtap="index" data-indexof="1">
-                        <image class="tabber_img" hidden="{{indexof==1?'':true}}" src="{{shouye_img}}"></image>
-                        <image class="tabber_img" hidden="{{indexof!=1?'':true}}" src="{{shouye_img}}"></image>
-                        <text class="{{indexof==1?'white':'white'}}" wx:if="{{shouyename}}">{{shouyename}}</text>
+        <view class="tabber" style=" background:{{dibu_color}};" >
+            <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true" >
+                <button formType="submit" hoverClass="none" >
+                    <view bindtap="index" data-indexof="1" style="width:250rpx;margin:auto;margin-top:6%; ">
+                        <image class="tabber_img" hidden="{{indexof==1?'':true}}" src="{{shouye_img}}" ></image>
+                        <image class="tabber_img" hidden="{{indexof!=1?'':true}}"  src="{{shouye_img}}" ></image>
+                        <text style="float: right;margin-right: 20%; margin-top: 10rpx;" class="{{indexof==1?'white':'white'}}" wx:if="{{shouyename}}">{{shouyename}}</text>
+
                     </view>
+
                 </button>
             </form>
-            <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true">
-                <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
-                    <view bindtap="savsd" data-indexof="4">
-                        <image class="tabber_img" hidden="{{indexof==4?'':true}}" src="{{paihangbang_img}}"></image>
-                        <image class="tabber_img" hidden="{{indexof!=4?'':true}}" src="{{paihangbang_img}}"></image>
-                        <text class="{{indexof==2?'white':'white'}}" wx:if="{{paihangbangname}}">{{paihangbangname}}</text>
-                    </view>
-                </button>
+            <form  style="  width: 1%;height: 100%; padding-top:2%;">
+
+                <span style=" display: block;height: 70%; background-size:100% 100%;background:url('https://www.ydproject.tech/addons/hc_dati/zhongjian.png') no-repeat ;" ></span>
+
             </form>
-            <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true" wx:if="{{fenlei==1}}">
-                <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
-                    <view bindtap="savsd" data-indexof="2">
-                        <image class="tabber_img" hidden="{{indexof==2?'':true}}" src="{{fenlei_img}}"></image>
-                        <image class="tabber_img" hidden="{{indexof!=2?'':true}}" src="{{fenlei_img}}"></image>
-                        <text class="{{indexof==2?'white':'white'}}" wx:if="{{fenleiname}}">{{fenleiname}}</text>
-                    </view>
-                </button>
-            </form>
+            <!--  <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true" wx:if="{{paihangbangname}}">
+                  <button formType="submit" hoverClass="none" style="padding-top:15rpx;position:none;display:inline-block;width:100%;height:100%;">
+                      <view bindtap="savsd" data-indexof="4">
+                          <image class="tabber_img" hidden="{{indexof==4?'':true}}" src="{{paihangbang_img}}"></image>
+                          <image class="tabber_img" hidden="{{indexof!=4?'':true}}" src="{{paihangbang_img}}"></image>
+                      </view>
+                      <text style="float: right;margin-top:20rpx;margin-left: 5rpx;" class="{{indexof==2?'white':'white'}}" >{{paihangbangname}}</text>
+                  </button>
+              </form>
+              <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true" wx:if="{{fenlei==1}}">
+                  <button formType="submit" hoverClass="none" style=" padding-top:15rpx; position:none;display:inline-block;width:100%;height:100%;">
+                      <view bindtap="savsdtwo" data-indexof="2">
+                          <image class="tabber_img" hidden="{{indexof==2?'':true}}" src="{{fenlei_img}}"></image>
+                          <image class="tabber_img" hidden="{{indexof!=2?'':true}}" src="{{fenlei_img}}"></image>
+                          <text  style="float: right;margin-top:20rpx;margin-left: 5rpx;" class="{{indexof==2?'white':'white'}}" wx:if="{{fenleiname}}">{{fenleiname}}</text>
+                      </view>
+                  </button>
+              </form>-->
             <form bindsubmit="submitInfo" class="tabber_qi" reportSubmit="true">
-                <button formType="submit" hoverClass="none" style="position:none;display:inline-block;width:100%;height:100%;">
-                    <view bindtap="guafen" data-indexof="3">
+                <button formType="submit" hoverClass="none" >
+                    <view bindtap="guafen" data-indexof="3"  style="width:250rpx;margin:auto;margin-top:6%; ">
                         <image class="tabber_img" hidden="{{indexof==3?'':true}}" src="{{wode_img}}"></image>
                         <image class="tabber_img" hidden="{{indexof!=3?'':true}}" src="{{wode_img}}"></image>
-                        <text class="{{indexof==3?'white':'white'}}" wx:if="{{wodename}}">{{wodename}}</text>
+                        <text style="float: right;margin-left: 5rpx;margin-top: 10rpx;" class="{{indexof==3?'white':'white'}}" wx:if="{{wodename}}">{{wodename}}</text>
                     </view>
                 </button>
             </form>

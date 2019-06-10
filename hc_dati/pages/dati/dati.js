@@ -339,7 +339,7 @@ Page({
                         }),
 
                         s.dati();
-                 }, 1000);
+                 }, 1100);
             }
 
             canRun = !1, setTimeout(function() {
