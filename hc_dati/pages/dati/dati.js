@@ -196,6 +196,7 @@ Page({
                     prompt: "时间到了哦~"
                 }), void console.log(111);
             }
+
             t.setData({
                 dao: t.data.dao - 1
             }), t.startTimetwo();
@@ -262,7 +263,7 @@ Page({
                     title: "恭喜答对",
                     icon: "success",
                     image: "../../resource/images/20180206172516.png",
-                    duration: 500,
+                    duration: 1000,
                     mask: !1
                 }), s.playAudio(tishi_yin), s.timeclear();
             }else{
@@ -284,7 +285,7 @@ Page({
                         title: "您答错了！",
                         icon: "success",
                         image: "../../resource/images/error.png",
-                        duration: 800,
+                        duration: 1000,
                         mask: !1
                     }), s.playAudio(tishi_yin), s.timeclear();
 
@@ -331,15 +332,19 @@ Page({
                     }
                 });
             } else {
-               var     u = s.data.tifhu + 1;
-                    s.setData({
-                        tifhu: u
-                    }), s.dati();
+                setTimeout(function() {
+                   var  u = s.data.tifhu + 1;
+                        s.setData({
+                            tifhu: u
+                        }),
+
+                        s.dati();
+                 }, 1000);
             }
 
             canRun = !1, setTimeout(function() {
                 canRun = !0;
-            }, 1100);
+            }, 1000);
         }
     },
     qu: function() {

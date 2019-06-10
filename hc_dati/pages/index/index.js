@@ -20,7 +20,7 @@ function _defineProperty(a, t, e) {
 }
 
 var app = getApp(), WxParse = require("../../../wxParse/wxParse.js"), col1H = 0, col2H = 0;
-
+var  canRun = !0;
 Page((_defineProperty(_Page = {
     data: (_data = {
         userInfo: {},
@@ -459,8 +459,13 @@ Page((_defineProperty(_Page = {
         });
     },
     tianzhu: function() {
-        this.canyu();
-    },
+            if(canRun) {
+                this.canyu();
+                canRun = !1, setTimeout(function() {
+                    canRun = !0;
+                }, 1000)
+            }
+        },
     switchChange: function(a) {
         var t = a.target.id, e = this.data.configs, i = e[t];
         i || (i = new Object(), e[t] = i), i.state = a.detail.value, this.setData({

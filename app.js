@@ -8,9 +8,7 @@ App({
         }), console.log(e.aldstatald);
         var n = wx.getStorageSync("configs");
         n || (n = this.initconfigs()), wx.setStorageSync("configs", n), wx.onUserCaptureScreen(function(n) {
-            console.log("用户截屏了"), wx.navigateBack({
-                delta: 0
-            }), e.util.request({
+            console.log("用户截屏了"),  e.util.request({
                 url: "entry/wxapp/jieping",
                 method: "post",
                 data: {

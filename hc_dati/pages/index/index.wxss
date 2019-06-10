@@ -1745,20 +1745,16 @@ button::after {
     background: #eb4e49;
     box-sizing: border-box;
     z-index: 0;
-    padding: 5rpx 0 10rpx 0;
+    padding: 5rpx 0 0 0;
     box-shadow: 2rpx 2px 4px 0 #000;
 }
 
 .tabber_qi {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 49.5%;
 }
 .tabber_img {
-    width: 70rpx;
-    height: 70rpx;
+    width: 50rpx;
+    height: 50rpx;
 }
 
 .white {
