@@ -1,5 +1,5 @@
 <view class="zhuti">
-    <image class="yicxsh" src="../../resource/images/bi1.png"></image>
+    <image class="yicxsh" src="../../resource/images/bi1.png" style="width: 100%;width: 100%;"></image>
     <view class="zhongbu">
         <view class="start" hidden="{{shouye==0?'':true}}">
             <view class="userInfo">
@@ -33,7 +33,7 @@
                 <image animation="{{animationData}}" class="zj02" src="../../resource/images/zj02.png"></image>
                 <image class="music_bei" src="../../resource/images/music_bei.png"></image>
             </view>
-            <text class="{{twy==2||twy==1?'timu':'timutwo'}}">{{tifhu}}、{{timu}}？</text>
+            <text class="{{twy==2||twy==1?'timu':'timutwo'}}">{{tifhu}}、{{timu}}</text>
             <view class="qitaid">
                 <text bindtap="dianii" class="wu {{item.classname}}" data-index="{{index}}"  wx:for="{{topic}}">{{item.value}}</text>
             </view>

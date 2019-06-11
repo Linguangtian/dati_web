@@ -339,7 +339,7 @@ Page({
                         }),
 
                         s.dati();
-                 }, 1100);
+                 }, 1300);
             }
 
             canRun = !1, setTimeout(function() {
@@ -414,7 +414,7 @@ Page({
     },
     playAudio: function(i) {
 
-        wx.getSystemInfo({
+    /*    wx.getSystemInfo({
             success: function(a) {
                 if (0 <= a.system.indexOf("iOS")) wx.playBackgroundAudio({
                     title: "播放",
@@ -427,7 +427,7 @@ Page({
                     t.src = i, t.onStop(function(a) {}), t.onEnded(function(a) {});
                 }
             }
-        });
+        });*/
     },
     playdianjiAudio: function(i) {
         var e = this;
@@ -437,7 +437,7 @@ Page({
                     title: "播放",
                     dataUrl: i,
                     complete: function() {
-                        wx.onBackgroundAudioStop(function(a) {});
+                      /*  wx.onBackgroundAudioStop(function(a) {});
                         var t = setInterval(function() {
                             wx.getBackgroundAudioPlayerState({
                                 success: function(a) {
@@ -446,7 +446,7 @@ Page({
                                 },
                                 fail: function(a) {}
                             });
-                        }, 500);
+                        }, 500);*/
                     }
                 }); else {
                     var t = wx.getBackgroundAudioManager();

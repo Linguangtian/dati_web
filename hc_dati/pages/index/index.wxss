@@ -116,7 +116,8 @@ ad {
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: center;
+    border-left: 4px solid #FFE648;
+    padding-left: 6px;
 }
 
 .beijgnbn {
@@ -1443,7 +1444,7 @@ button::after {
 }
 
 .gdzltz {
-    color: #cb543e;
+    color: #000000;
     font-size: 30rpx;
     position: relative;
 }
@@ -1466,6 +1467,20 @@ button::after {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+
+}
+.yaoqingmabg{
+    background:url("https://www.ydproject.tech/addons/hc_dati/yaoqingma.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.jihui{
+    background:url("https://www.ydproject.tech/addons/hc_dati/jihui.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+.yitiaozhan{
+    background:url("https://www.ydproject.tech/addons/hc_dati/fasong.png") no-repeat center center;
+    background-size: 100% 100%;
 }
 
 .yishif .sanhsifli9 {
@@ -1579,7 +1594,8 @@ button::after {
     box-sizing: border-box;
     padding: 0 36rpx;
     text-align: center;
-    background: #fff;
+
+    background: #f0f0f0;
     padding-top: 10px;
 }
 
@@ -1964,8 +1980,18 @@ button::after {
     position: relative;
     height: 400rpx;
     overflow: hidden;
+    background: #f0f0f0;
 }
+.teou2 {
+    padding:0 36rpx;
+    position: relative;
+    overflow: hidden;
 
+}
+.teou2 .teou2_bg{
+    background: #FFFFFF;
+    height: 125rpx;
+}
 .ueinfora {
     height: 150rpx;
     display: flex;
@@ -1987,7 +2013,6 @@ button::after {
 .wodezhr {
     width: 80%;
     position: absolute;
-    bottom: 30rpx;
     display: flex;
     z-index: 0;
     align-items: center;
@@ -2003,6 +2028,8 @@ button::after {
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    font-size: 16px;
+    color:#000000;
 }
 
 .wodezhr_jisa image {
@@ -2021,7 +2048,7 @@ button::after {
 
 .ueinfora text {
     font-size: 30rpx;
-    color: #fff;
+    color: #333333;
 }
 
 .yicxsh {

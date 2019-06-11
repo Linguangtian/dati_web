@@ -1,8 +1,8 @@
 <import src="../../../wxParse/wxParse.wxml"></import>
 <view class="total" hidden="{{stake==0?'':true}}">
     <image class="total_img" src="{{bg_color}}"></image>
-    <scroll-view class="{{chao?'bcshad':'overui'}}" data-indexof="1" hidden="{{indexof==1?'':true}}" scrollY="true" style="height:100%;">
-        <view class="datigna">
+    <scroll-view class="{{chao?'bcshad':'overui'}}" data-indexof="1" hidden="{{indexof==1?'':true}}"  style="height:100%;">
+        <view class="datigna" catchtouchmove="doNothing">
             <image class="bigback" src="{{daoh}}"></image>
             <form bindsubmit="submitInfo" reportSubmit="true">
                 <button formType="submit" hoverClass="none" style="position:none;display:flex;width:100%;height:100%;">
@@ -11,7 +11,7 @@
             </form>
             <view class="zuda">
                 <image bindtap="guize" class="guizetu" src="../../resource/images/gui.png"></image>
-                <image bindtap="savsd" class="bang" data-indexof="4" src="../../resource/images/bang.png"></image>
+            <!--    <image bindtap="savsd" class="bang" data-indexof="4" src="../../resource/images/bang.png"></image>-->
                 <button bindtap="kefu" class="kefuca" hoverClass="none" openType="contact">
                     <image src="../../resource/images/kefuubai.png"></image>
                 </button>
@@ -97,7 +97,7 @@
             </view>
         </view>
     </scroll-view>
-    <scroll-view class="{{chao?'bcshad':'overui'}}" data-indexof="3" hidden="{{indexof==3?'':true}}" scrollY="true" style="background:#fff;height:86%;">
+    <scroll-view class="{{chao?'bcshad':'overui'}}" data-indexof="3" hidden="{{indexof==3?'':true}}" scrollY="true" style="background:#f0f0f0;height:100%;">
         <view class="teou">
             <view class="xiezhe">
                 <image src="../../resource/images/cdasvds_02.jpg"></image>
@@ -106,33 +106,46 @@
                 <image src="{{userInfo.avatarUrl}}"></image>
                 <text>{{userInfo.nickName}}</text>
             </view>
-            <view class="wodezhr">
-                <view bindtap="lingqu" class="wodezhr_jisa">
-                    <image src="{{wodejiangpin_pic}}"></image>
+        </view>
+
+        <view class="teou2">
+            <view class="teou2_bg">
+                <view class="wodezhr">
+                    <view bindtap="lingqu" class="wodezhr_jisa">
+                        <i  style='margin-right: 16rpx; background: url("{{wodejiangpin_pic}}") no-repeat center center; display: block;width: 50rpx;height: 40rpx; background-size: 100% 100%'></i>
+                        我的奖品
+                    </view>
+
+
+                    <button bindtap="kefu" class="wodezhr_jisa" hoverClass="none" openType="contact">
+                        <i  style='margin-right: 16rpx; background: url("{{lianxiwomen_pic}}") no-repeat center center; display: block;width: 50rpx;height: 40rpx; background-size: 100% 100%'></i>
+                        客服
+                    </button>
                 </view>
-                <button bindtap="kefu" class="wodezhr_jisa" hoverClass="none" openType="contact">
-                    <image src="{{lianxiwomen_pic}}"></image>
-                </button>
             </view>
         </view>
+
         <view class="beijgnbn"></view>
+
+
+
         <view class="dakdu">
             <view class="qic">
                 <text class="gdzltz">更多智力挑战</text>
                 <!-- <text bindtap="tousu" class="tousu">投诉</text>-->
             </view>
             <view class="jifentuijia">
-                <view class="yishif bovvfs">
-                    <text class="sanhsifli9">{{jihui}}</text>
-                    <text>机会</text>
+                <view class="yishif bovvfs jihui">
+                   <!-- <text class="sanhsifli9">{{jihui}}</text>
+                    <text>机会</text>-->
                 </view>
-                <view class="yishif bovvfs">
-                    <text class="">{{yitiaozhan}}</text>
-                    <text>已挑战</text>
+                <view class="yishif bovvfs yitiaozhan">
+                 <!--   <text class="">{{yitiaozhan}}</text>
+                    <text>已挑战</text>-->
                 </view>
-                <view bindtap="yaoqing" class="yishif ">
-                    <text class="">{{yqm}}</text>
-                    <text>邀请码</text>
+                <view bindtap="yaoqing" class="yishif yaoqingmabg">
+                   <!-- <text class="">{{yqm}}</text>
+                    <text>邀请码</text>-->
                 </view>
             </view>
             <view class="tiaohunsv">

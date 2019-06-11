@@ -33,8 +33,9 @@ page {
 .zhongbu {
     width: 90%;
     margin: 0 auto;
-    height: 93%;
-    background: #fff4de;
+    height: 80%;
+    margin-top: 20%;
+    background: #FFFFFF;
     border-radius: 10rpx;
     overflow: auto;
 }
@@ -147,6 +148,7 @@ button::after {
     padding: 20rpx 30rpx;
     position: relative;
     height: 100%;
+    border: 1px solid #B32200;
 }
 
 .begin_two {
@@ -155,12 +157,14 @@ button::after {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 60rpx;
 }
 
 .vsdn {
     width: 100rpx;
     height: 100rpx;
     border-radius: 100%;
+    border: 1px solid #DBDBDB;
 }
 
 .geren_one {
@@ -224,7 +228,7 @@ button::after {
     color: #cb543e;
     display: block;
     text-align: center;
-    margin: 27% 0;
+    margin: 12% 0;
 }
 
 .qitaid {
@@ -242,8 +246,9 @@ button::after {
     justify-content: center;
     align-items: center;
     font-size: 30rpx;
+    border: 1px solid #B32200;
     color: #726751;
-    background: #f6dba6;
+    background: #FFFFFF;
     border-radius: 20rpx;
     margin-bottom: 20rpx;
 }

@@ -894,7 +894,7 @@ Page((_defineProperty(_Page = {
         }), s.playAudio(s.data.shibai_mp3), setTimeout(function() {}.bind(), 500));
     },
     playAudio: function(e) {
-        wx.getSystemInfo({
+       /* wx.getSystemInfo({
             success: function(a) {
                 if (0 <= a.system.indexOf("iOS")) wx.playBackgroundAudio({
                     title: "播放",
@@ -907,7 +907,7 @@ Page((_defineProperty(_Page = {
                     t.src = e, t.onStop(function(a) {}), t.onEnded(function(a) {});
                 }
             }
-        });
+        });*/
     },
     fenxiangaa: function() {
         app.globalData.shouye = null, wx.stopBackgroundAudio();

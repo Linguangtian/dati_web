@@ -14,7 +14,7 @@ page {
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 150rpx;
+    bottom: 88rpx;
     left: 50%;
     margin-left: -25%;
 }
