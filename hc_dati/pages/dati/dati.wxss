@@ -228,7 +228,9 @@ button::after {
     color: #cb543e;
     display: block;
     text-align: center;
-    margin: 12% 0;
+    margin-top: 8%;
+    margin-bottom: 12%;
+
 }
 
 .qitaid {
@@ -342,6 +344,7 @@ button::after {
     box-sizing: border-box;
     padding: 79rpx 0;
     padding-bottom: 0;
+
 }
 
 .cashvsd {
@@ -398,11 +401,11 @@ button::after {
     position: absolute;
     top: 50rpx;
     display: flex;
-
     flex-direction: column;
     justify-content: center;
     margin-top: -173rpx;
     align-items: center;
+
 }
 
 .shangxia {
@@ -414,7 +417,8 @@ button::after {
     text-align: center;
     flex-direction: column;
     margin-top: 150rpx;
-    border-top: #b5b5b5 dashed 2rpx;
+
+
 }
 
 .bitozas {

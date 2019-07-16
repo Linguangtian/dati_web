@@ -1,7 +1,7 @@
 <view class="qieh">
     <text bindtap="jiang" class="{{one==index?'tes':''}}" data-index="{{index}}" wx:for="{{jiang}}">{{item}}</text>
 </view>
-<view class="more_sufn" wx:if="{{one==0}}" wx:for="{{tudof}}">
+<!--<view class="more_sufn" wx:if="{{one==0}}" wx:for="{{tudof}}">
     <image src="{{item.thumb}}"></image>
     <view class="more_gongis">
         <view class="digasop">
@@ -24,6 +24,14 @@
         <view class="digasop">
             <text>{{item.danhao}}{{item.kuaididan}}</text>
             <text class="more_yuas">{{item.gongsi}}{{item.kuaidigongsi}}</text>
+        </view>
+    </view>
+</view>-->
+<view class="more_sufn" >
+    <view class="more_gongis">
+        <view class="digasop" style="width: 100%">
+            <text>1、{{guize3}}</text>
+            <text>2、{{guize4}}</text>
         </view>
     </view>
 </view>

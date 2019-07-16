@@ -33,9 +33,11 @@
                 <image animation="{{animationData}}" class="zj02" src="../../resource/images/zj02.png"></image>
                 <image class="music_bei" src="../../resource/images/music_bei.png"></image>
             </view>
-            <text class="{{twy==2||twy==1?'timu':'timutwo'}}">{{tifhu}}、{{timu}}</text>
+            <text class="{{twy==2||twy==1?'timu':'timutwo'}}" wx:if="{{timu_size}}"  style="font-size: 28rpx;" >{{tifhu}}、{{timu}}</text>
+            <text class="{{twy==2||twy==1?'timu':'timutwo'}}" wx:else >{{xianshi_num}}、{{timu}}</text>
             <view class="qitaid">
-                <text bindtap="dianii" class="wu {{item.classname}}" data-index="{{index}}"  wx:for="{{topic}}">{{item.value}}</text>
+                <text bindtap="dianii" class="wu {{item.classname}}" data-index="{{index}}"  style="font-size: {{item.size}}rpx; padding: 6rpx 0;"  wx:for="{{topic}}">{{item.value}}</text>
+
             </view>
         </view>
     </view>
@@ -50,9 +52,9 @@
                 <button bindtap="pay" class="qita" style="margin-top:30rpx;" wx:if="{{fh_zhifu_status==1}}">
                     <image src="{{fh_zhifu_img}}"></image>
                 </button>
-                <button class="qita" openType="share">
+              <!--  <button class="qita" openType="share">
                     <image src="{{fh_zhuanfa_img}}"></image>
-                </button>
+                </button>-->
             </view>
             <image bindtap="xiaxi" class="cxsahg" src="../../resource/images/guanbi.png" style="display:block;"></image>
         </view>
@@ -62,11 +64,13 @@
     <view class="fail_one">
         <view class="xsaoc">
             <image class="quyd" src="../../resource/images/xiao.png"></image>
-            <text class="day">恭喜完成答题（时长：{{cost_time}}秒，正确率：{{accuracy_rate}}%)</text>
+            <text class="day">恭喜完成答题</text>
+            <text class="day"style="text-align: center;">时长：{{cost_time}}秒，正确率：{{accuracy_rate}}%</text>
         </view>
         <view class="shangxia">
             <button bindtap="qu" class="qita" style="margin-top:108rpx;">
-                <text class="qulingxsaca" style="font-size:37rpx;">挑战成功{{jiangpina}}</text>
+                <text class="qulingxsaca" style="font-size:37rpx;">感谢参与此次活动！
+                </text>
             </button>
         </view>
         <image bindtap="qu" class="cxsahg" src="../../resource/images/guanbi.png" style="display:block;"></image>
@@ -87,9 +91,9 @@
 <view class="{{cheng?'none':'answer'}}" wx:if="{{jiangpin_status==0}}">
     <image class="qiyufaimg" src="../../resource/images/311229099764752061.png"></image>
     <text class="shi_jijianghkau">挑战成功</text>
-    <view class="wenju">
+    <!--<view class="wenju">
         稳居排行榜第{{award}}名
-    </view>
+    </view>-->
     <view bindtap="qu" class="ligs">领取奖品</view>
     <button class="asvavcasd" openType="share">
          去炫耀

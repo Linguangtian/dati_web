@@ -22,7 +22,6 @@ Page({
                             open_id: t
                         }), wx.getUserInfo({
                             success: function(a) {
-                                console.log(222);
                                 var t = c.data.open_id, e = a.userInfo, s = e.nickName, n = e.avatarUrl, i = e.gender, o = e.province, u = e.city, d = e.country;
                                 o = e.province;
                                 app.util.request({

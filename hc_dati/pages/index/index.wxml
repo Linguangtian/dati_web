@@ -111,9 +111,10 @@
         <view class="teou2">
             <view class="teou2_bg">
                 <view class="wodezhr">
-                    <view bindtap="lingqu" class="wodezhr_jisa">
+                  <view bindtap="lingqu" class="wodezhr_jisa">
+                  <!--  <view bindtap="jiangpintishi" class="wodezhr_jisa">-->
                         <i  style='margin-right: 16rpx; background: url("{{wodejiangpin_pic}}") no-repeat center center; display: block;width: 50rpx;height: 40rpx; background-size: 100% 100%'></i>
-                        我的奖品
+                        奖品说明
                     </view>
 
 
@@ -127,6 +128,32 @@
 
         <view class="beijgnbn"></view>
 
+        <view class="{{gui?'none_gui':'qiandao_dui'}}">
+            <view class="qiandao_one">
+                <image bindtap="gb_dui" class="gb" src="../../resource/images/gb.png"></image>
+                <view class="asjv xsaas">
+                    <view class="qiuvsnvbsdfb">
+                        <text>1</text>
+                        <view class="yuview">{{guize1}}</view>
+                    </view>
+                    <view class="qiuvsnvbsdfb">
+                        <text>2</text>
+                        <view class="yuview">{{guize2}}</view>
+                    </view>
+                    <view class="qiuvsnvbsdfb">
+                        <text>3</text>
+                        <view class="yuview">{{guize3}}</view>
+                    </view>
+                    <view class="qiuvsnvbsdfb">
+                        <text>4</text>
+                        <view class="yuview">{{guize4}}</view>
+                    </view>
+                </view>
+                <button bindtap="kefu" class="lxasjca" openType="contact">联系客服</button>
+            </view>
+        </view>
+
+
 
 
         <view class="dakdu">
@@ -135,7 +162,7 @@
                 <!-- <text bindtap="tousu" class="tousu">投诉</text>-->
             </view>
             <view class="jifentuijia">
-                <view class="yishif bovvfs jihui">
+                <view   bindtap="guize" data-indexof="4" class="yishif bovvfs jihui">
                    <!-- <text class="sanhsifli9">{{jihui}}</text>
                     <text>机会</text>-->
                 </view>
@@ -225,8 +252,8 @@
             <view class="kuang">
                 <image animation="{{fangda}}" class="paiweiimg" src="../../resource/images/311229099764752061.png"></image>
             </view>
-            <view animation="{{fangda}}" class="wenju">稳居排行榜第{{awards}}名</view>
-            <view bindtap="hdgd" class="shi_guode">获得更多</view>
+         <!--   <view animation="{{fangda}}" class="wenju">稳居排行榜第{{awards}}名</view>
+            <view bindtap="hdgd" class="shi_guode">获得更多</view>-->
             <view bindtap="zailai" class="shi_gsac">再来一次</view>
             <button bindtap="kefu" class="shi_gsali" openType="contact">联系客服</button>
         </view>
@@ -316,9 +343,13 @@
                     </view>
                 </view>
             </view>
-            <view bindtap="guizetwoac" class="dauvbs_three">
+           <!-- <view bindtap="guizetwoac" class="dauvbs_three">
                 <image class="dauvbs_qicvdsvb" src="{{pxguize_img}}"></image>
                 <text class="dauvbs_threetetx">活动规则</text>
+            </view>-->
+            <view bindtap="guafen" data-indexof="3"   class="dauvbs_three" style="margin: auto 0;">
+                <image  class="guizetu" src="../../resource/images/gb.png"></image>
+                <text style="line-height: 50rpx;" class="dauvbs_threetetx">关闭</text>
             </view>
         </view>
         <view bindtap="redto" class="hogbaid" wx:if="{{lj_stact!=0}}">

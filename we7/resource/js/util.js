@@ -106,6 +106,7 @@ util.url = function(e, t) {
         a.complete && "function" == typeof a.complete && a.complete(e);
     }), e));
 }, util.getUserInfo = function(n) {
+    console.info(999999999);
     var e = function() {
         console.log("start login");
         var t = {

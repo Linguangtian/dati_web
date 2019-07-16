@@ -355,6 +355,13 @@ Page((_defineProperty(_Page = {
             chao: !1
         });
     },
+
+
+
+
+
+
+
     guizetwoac: function() {
         var o = this, a = o.data.guitwo;
         o.data.chao;
@@ -450,7 +457,7 @@ Page((_defineProperty(_Page = {
             fail: function(a) {
                 wx.showModal({
                     title: "提示",
-                    content: "您没有答题机会了，请在下方补充机会继续答题",
+                    content: "您没有答题机会了",
                     success: function(a) {
                         a.confirm;
                     }
@@ -557,6 +564,10 @@ Page((_defineProperty(_Page = {
             url: "../wining/wining"
         });
     },
+
+
+
+
     gb_dui: function() {
         var a = this.data.gui;
         this.data.chao;
@@ -1455,7 +1466,7 @@ Page((_defineProperty(_Page = {
         success: function(a) {
             var i = a.shareTickets;
             if (null == i && wx.showModal({
-                title: "分享失败",
+                title: "信息提示",
                 content: n.data.zhuanfaqun,
                 success: function(a) {
                     a.confirm ? console.log("用户点击确定") : console.log("用户点击取消");
@@ -1498,7 +1509,7 @@ Page((_defineProperty(_Page = {
                                             }
                                         });
                                     } else wx.showModal({
-                                        title: "分享失败",
+                                        title: "信息提示",
                                         content: "请转发不同的群，转发次数有限请谅解",
                                         success: function(a) {
                                             a.confirm ? console.log("用户点击确定") : console.log("用户点击取消");
@@ -1507,7 +1518,7 @@ Page((_defineProperty(_Page = {
                                 },
                                 fail: function() {
                                     wx.showModal({
-                                        title: "分享失败",
+                                        title: "信息提示",
                                         content: "请转发到群,不要转发到个人",
                                         success: function(a) {
                                             a.confirm ? console.log("用户点击确定") : console.log("用户点击取消");

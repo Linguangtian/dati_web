@@ -27,7 +27,10 @@ Page({
         accuracy_rate: 1,
         xaun: !1,
         jiangpina: "",
-        award: ""
+        award: "",
+        timu_size: 0,
+        xianshi_num:0
+
     },
     onLoad: function(a) {
         wx.setNavigationBarColor({
@@ -178,7 +181,7 @@ Page({
         }, 1e3);
     },
     startTimetwo: function() {
-        var t = this;
+       var t = this;
         timera = setTimeout(function() {
             if (0 == t.data.dao) {
                 var a = t.data.index;
@@ -265,7 +268,8 @@ Page({
                     image: "../../resource/images/20180206172516.png",
                     duration: 1000,
                     mask: !1
-                }), s.playAudio(tishi_yin), s.timeclear();
+           /*     }), s.playAudio(tishi_yin), s.timeclear();*/
+                }), s.timeclear();
             }else{
                 //解决安卓两次同样的无法播放问题
                 if(tishiyin){
@@ -287,7 +291,8 @@ Page({
                         image: "../../resource/images/error.png",
                         duration: 1000,
                         mask: !1
-                    }), s.playAudio(tishi_yin), s.timeclear();
+               /*     }), s.playAudio(tishi_yin), s.timeclear();*/
+                    }), s.timeclear();
 
             }
 
@@ -304,6 +309,13 @@ Page({
                 accuracy_rate= accuracy_rate.substring(0,accuracy_rate.lastIndexOf('.')+3);
                 accuracy_rate=accuracy_rate*100;
                 var cost_time=  parseInt((end_time- s.data.begin_time)/1000);
+
+
+                var  x = s.data.tifhu + 1;
+                s.setData({
+                    tifhu: x
+                })
+
                 s.setData({
                     tifhu: u,
                     cost_time:cost_time,
@@ -331,20 +343,20 @@ Page({
                         }, 800)
                     }
                 });
-            } else {
-                setTimeout(function() {
-                   var  u = s.data.tifhu + 1;
-                        s.setData({
-                            tifhu: u
-                        }),
-
+            } else  {
+                  var  u = s.data.tifhu + 1;
+                            s.setData({
+                                tifhu: u
+                  })
+                    setTimeout(function () {
                         s.dati();
-                 }, 1300);
+                    },800)
+
             }
 
             canRun = !1, setTimeout(function() {
                 canRun = !0;
-            }, 1000);
+            }, 1100);
         }
     },
     qu: function() {
@@ -355,45 +367,69 @@ Page({
     onReady: function() {},
     dati: function() {
         var l = this;
-        app.util.request({
-            url: "entry/wxapp/dati1",
-            method: "POST",
-            data: {
-                tifhu: l.data.tifhu,
-                id: app.globalData.gohomeid,
-                cid: l.data.cid
-            },
-            success: function(a) {
-                var t = a.data.data, i = t.daan1, e = t.xuanxiang, n = t.timu, o = t.twy;
-                if (null != i && console.log("结束结束"), 1 == o) {
-                    var s = t.tupian;
+        if(l.data.tifhu <=l.data.shuzitwo) {
+            app.util.request({
+                url: "entry/wxapp/dati1",
+                method: "POST",
+                data: {
+                    tifhu: l.data.tifhu,
+                    id: app.globalData.gohomeid,
+                    cid: l.data.cid
+                },
+                success: function (a) {
+                    var t = a.data.data, i = t.daan1, e = t.xuanxiang, n = t.timu, o = t.twy;
+                    if (null != i && console.log("结束结束"), 1 == o) {
+                        var s = t.tupian;
+                        l.setData({
+                            tupian: s
+                        });
+                    }
+                    if (2 == o) {
+                        var u = t.yinyue, d = t.time, c = t.yinyue_end_time;
+                        l.setData({
+                            yinyue: u,
+                            musictime: d,
+                            dao: c
+                        });
+                    } else if (2 != o) {
+                        var r = t.time;
+                        c = t.time;
+                        l.setData({
+                            chutime: r,
+                            dao: c
+                        });
+                    }
+
+                    var t_size = 0, d_size = 0;
+                    if (n.length > 53) {
+                        t_size = 1;
+                    }
+                    for (var key = 0; key < e.length; key++) {
+
+                        if (e[key].value.length > 15 && e[key].value.length < 40) {
+                            e[key].size = 24;
+                        } else if (e[key].value.length > 40) {
+                            e[key].size = 20;
+                        } else {
+                            e[key].size = 30;
+                        }
+                    }
+                    var xsn = l.data.xianshi_num + 1;
                     l.setData({
-                        tupian: s
+                        topic: e,
+                        daan: i,
+                        timu: n,
+                        twy: o,
+                        timu_size: t_size,
+                        xianshi_num: xsn
+
                     });
+
+
                 }
-                if (2 == o) {
-                    var u = t.yinyue, d = t.time, c = t.yinyue_end_time;
-                    l.setData({
-                        yinyue: u,
-                        musictime: d,
-                        dao: c
-                    });
-                } else if (2 != o) {
-                    var r = t.time;
-                    c = t.time;
-                    l.setData({
-                        chutime: r,
-                        dao: c
-                    });
-                }
-                l.setData({
-                    topic: e,
-                    daan: i,
-                    timu: n,
-                    twy: o
-                });
-            }
-        });
+            });
+        }
+
     },
     kai: function() {
         var a = this;
@@ -414,7 +450,7 @@ Page({
     },
     playAudio: function(i) {
 
-    /*    wx.getSystemInfo({
+        wx.getSystemInfo({
             success: function(a) {
                 if (0 <= a.system.indexOf("iOS")) wx.playBackgroundAudio({
                     title: "播放",
@@ -427,7 +463,7 @@ Page({
                     t.src = i, t.onStop(function(a) {}), t.onEnded(function(a) {});
                 }
             }
-        });*/
+        });
     },
     playdianjiAudio: function(i) {
         var e = this;
@@ -522,7 +558,7 @@ Page({
             success: function(a) {
                 var e = a.shareTickets;
                 if (null == e && wx.showModal({
-                    title: "分享失败",
+                    title: "信息提示",
                     content: n.data.zhuanfaqun,
                     success: function(a) {
                         a.confirm ? console.log("用户点击确定") : console.log("用户点击取消");

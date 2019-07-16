@@ -2,11 +2,14 @@ var app = getApp();
 
 Page({
     data: {
-        jiang: [ "我的奖品", "排行榜奖品" ],
-        one: 0
+        jiang: [ "奖品说明" ],
+        one: 0,
+        guize3:'',
+        guize4:'',
     },
     onLoad: function(a) {
         var t = app.globalData.user_id, n = app.globalData.xcx_name;
+
         wx.setNavigationBarTitle({
             title: n
         }), wx.setNavigationBarColor({
@@ -24,8 +27,12 @@ Page({
             },
             success: function(a) {
                 var t = a.data.data;
+                var guize3 = a.data.data.guize3;
+                var guize4 = a.data.data.guize4;
                 o.setData({
-                    tudof: t
+                    tudof: t,
+                    guize3: guize3,
+                    guize4: guize4,
                 });
             }
         });
